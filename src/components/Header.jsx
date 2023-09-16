@@ -74,7 +74,7 @@ const Header = () => {
 
       </motion.div>} 
 
-      <div className='hidden sm:flex unbounded text-[#17191b] font-medium transition-all cursor-pointer text-md'>Let's Talk!</div>
+      <div className='hidden sm:flex unbounded text-[#17191b] font-medium transition-all cursor-pointer text-md'>Let`&apos;`s Talk!</div>
 
     </div>
   )
