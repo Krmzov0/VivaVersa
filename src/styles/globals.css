@@ -8,15 +8,60 @@
   src: url('../assets/fonts/Unbounded-VariableFont_wght.ttf');
 }
 
-.unbounded{
+.unbounded {
   font-family: unbounded;
 }
 
-body{
+body {
   background: #f1f2ee;
   overflow-x: hidden;
 }
 
-.h1div:hover .h1class{
+.h1div:hover .h1class {
   font-weight: 500;
+}
+
+.aboutLink::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #17191b;
+  transition: 0.2s ease;
+}
+
+.aboutLink:hover::after{
+  width: 100%;
+}
+.aboutLink:hover .graycube {
+  background: #17191b;
+}
+
+.aboutLink:hover .blackcube {
+  background: #878c8e;
+}
+
+
+.servicesLink::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #f1f2ee;
+  transition: 0.2s ease;
+}
+
+.servicesLink:hover::after{
+  width: 100%;
+}
+.servicesLink:hover .graycube {
+  background: #f1f2ee;
+}
+
+.servicesLink:hover .whiteCube {
+  background: #878c8e;
 }
