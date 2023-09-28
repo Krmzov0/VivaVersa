@@ -52,7 +52,7 @@ const Header = () => {
 
         {menuToggle && <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8 }} className='w-full flex justify-between items-center'>
           <Image
-            src="/LogoWhite.png"
+            src="/White.png"
             width={55}
             height={55}
             alt=''
@@ -74,14 +74,15 @@ const Header = () => {
 
         {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.85 }}><h2 className='flex sm:hidden unbounded mt-6 ml-1 text-[#878c8e] font-light transition-all cursor-pointer text-3xl'>Let&apos;s talk</h2></motion.div>}
 
-        <div className='hidden sm:flex unbounded text-[#17191b] font-medium transition-all cursor-pointer text-md'>Let`&apos;`s Talk!</div>
+      </motion.div>}
 
-      </motion.div>
+      <div className='hidden sm:flex unbounded text-[#17191b] font-regular transition-all cursor-pointer text-md'>Let&apos;s Talk!</div>
+
     </div>
   )
 }
 
-export default Header;
+export default Header
 
 
 
