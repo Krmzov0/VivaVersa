@@ -12,9 +12,7 @@ export default function Home() {
   return (
     <div className="">
 
-      <div className="relative flex justify-start sm:justify-between flex-col items-center h-max sm:h-screen w-full">
-        <Header />
-
+      <div className="relative flex justify-start sm:justify-center gap-y-0 sm:gap-y-24 flex-col items-center h-max sm:h-screen w-full">
         <div className="flex flex-col justify-center items-center mt-14 sm:mt-0 relative">
           <p className="text-[#878c8e] unbounded font-light mb-3 sm:md-4 text-sm sm:text-[16px] text-center">DIGITAL MARKETING AGENCY</p>
 
@@ -84,11 +82,9 @@ export default function Home() {
         
       </div>
 
-      <div className="z-10 w-screen relative h-full  gap-y-16 sm:gap-y-20 flex flex-col bg-[#17191b] p-8 py-16 sm:py-12 sm:p-12  sm:pr-16">
+      <div className="z-10 w-screen relative h-full gap-y-16 sm:gap-y-20 flex flex-col bg-[#17191b] p-8 py-16 sm:py-12 sm:p-12  sm:pr-16">
 
         <div className="flex flex-col">
-
-
           <div className="w-full justify-between gap-y-8 sm:gap-y-0 flex flex-col-reverse sm:flex-row  items-end sm:items-center">
 
             <div className="flex flex-col">
@@ -123,6 +119,7 @@ export default function Home() {
         </div>
       </div>
 
+      <div></div>
 
     </div>
   )

@@ -38,6 +38,7 @@ const Header = () => {
         <h2 className='unbounded hover:text-[#17191b] duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#878c8e] text-lg'>home</h2>
         <h2 className='unbounded hover:text-[#17191b] duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#878c8e] text-lg'>about</h2>
         <h2 className='unbounded hover:text-[#17191b] duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#878c8e] text-lg'>services</h2>
+        <h2 className='unbounded hover:text-[#17191b] duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#878c8e] text-lg'>contact</h2>
       </div>
 
       <div className='flex sm:hidden'>
@@ -66,19 +67,20 @@ const Header = () => {
         </motion.div>}
 
 
-        <div className='mt-12 ml-1 gap-y-4 flex flex-col'>
-          {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.5 }}><h2 className='unbounded hover:text-[#17191b] uppercase duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#f1f2ee] text-3xl'>home</h2></motion.div>}
-          {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.65 }}><h2 className='unbounded hover:text-[#17191b] uppercase duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#f1f2ee] text-3xl'>about</h2></motion.div>}
-          {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.75 }}><h2 className='unbounded hover:text-[#17191b] uppercase duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#f1f2ee] text-3xl'>services</h2></motion.div>}
+        <div className='mt-12 ml-1 gap-y-6 flex flex-col'>
+          {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.5 }}><h2 className='unbounded hover:text-[#878c8e] uppercase duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#f1f2ee] text-4xl'>home</h2></motion.div>}
+          {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.65 }}><h2 className='unbounded hover:text-[#878c8e] uppercase duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#f1f2ee] text-4xl'>about</h2></motion.div>}
+          {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.75 }}><h2 className='unbounded hover:text-[#878c8e] uppercase duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#f1f2ee] text-4xl'>services</h2></motion.div>}
+          {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.85 }}><h2 className='unbounded hover:text-[#878c8e] uppercase duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#f1f2ee] text-4xl'>contact</h2></motion.div>}
         </div>
-
-        {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.85 }}><h2 className='flex sm:hidden unbounded mt-6 ml-1 text-[#878c8e] font-light transition-all cursor-pointer text-3xl'>Let&apos;s talk</h2></motion.div>}
 
       </motion.div>}
 
-      <div className='hidden sm:flex unbounded text-[#17191b] font-regular transition-all cursor-pointer text-md'>Let&apos;s Talk!</div>
-
-    </div>
+      <motion.div whileHover={{ scale: 1.2 }} transition={{ type: "spring", stiffness: 400, damping: 17 }}>
+        <button className='hidden sm:flex unbounded text-[#17191b] font-regular transition-all cursor-pointer text-md'>Let&apos;s Talk!</button>
+      </motion.div>
+ 
+    </div >
   )
 }
 
