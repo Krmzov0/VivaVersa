@@ -1,13 +1,35 @@
-import Header from "@/components/Header";
 import AnimatedH1 from "../components/AnimatedH1";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { motion } from "framer-motion";
+import { motion, useAnimation, useInView } from "framer-motion";
+import React, { useEffect, useRef } from "react";
+
 
 export default function Home() {
 
   const router = useRouter();
 
+  const ref = useRef(null);
+  const ref2 = useRef(null);
+
+  const isInView = useInView(ref, { once: true });
+  const isInViewServices = useInView(ref2, { once: true });
+
+  const mainControls = useAnimation();
+  const servicesControls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+    }
+  }, [isInView]);
+
+  useEffect(() => {
+    console.log(isInViewServices)
+    if (isInViewServices) {
+      servicesControls.start("visible");
+    }
+  }, [isInViewServices]);
 
   return (
     <div className="">
@@ -57,69 +79,80 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="h-max sm:h-screen relative w-screen p-8 sm:p-12 pb-16 sm:pb-12 sm:pr-16 flex flex-col justify-start">
+      <div ref={ref} className="h-max sm:h-screen relative w-screen p-8 sm:p-12 pb-16 sm:pb-12 sm:pr-16 flex flex-col justify-start">
         <div className="w-full justify-between gap-y-8 sm:gap-y-0 flex flex-col-reverse sm:flex-row  items-end sm:items-center">
-          <h1 className="unbounded text-[38px] font-light text-right sm:text-left">GET TO <br />KNOW US BETTER</h1>
+          <motion.div variants={{ hidden: { opacity: 0, y: 70 }, visible: { opacity: 1, y: 0 } }} transition={{ delay: 0.4 }} initial="hidden" animate={mainControls}><h1 className="unbounded text-[38px] font-light text-right sm:text-left">GET TO <br />KNOW US BETTER</h1></motion.div>
 
-          <div onClick={() => router.push('/about')} className="flex aboutLink cursor-pointer relative items-center gap-x-4">
+          <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} transition={{ delay: 0.6 }} initial="hidden" animate={mainControls}><div onClick={() => router.push('/about')} className="flex aboutLink cursor-pointer relative items-center gap-x-4">
             <h2 className="unbounded text-xl text-[#17191b] font-light relative">ABOUT</h2>
             <div className=" transition-all flex justify-end w-14 h-14 relative">
               <div className=" transition-all blackcube w-[50%] h-full bg-[#17191b]"></div>
               <div className=" transition-all graycube w-8 h-8 bg-[#878c8e] absolute left-[50%] top-[50%] translate-y-[-50%] translate-x-[-50%] "></div>
             </div>
+          </div></motion.div>
+        </div>
+
+        <motion.div variants={{ hidden: { opacity: 0, y: 40 }, visible: { opacity: 1, y: 0 } }} transition={{ delay: 0.75 }} initial="hidden" animate={mainControls}><p className=" mt-10 unbounded text-[16px] text-[#878c8e]">Driving digital success through expert marketing strategies and <br /> data-driven solutions.</p></motion.div>
+
+
+        <div className="mt-24 sm:flex flex-col hidden sm:flex-row items-center justify-center gap-x-0 sm:gap-x-28">
+          <div className="flex relative justify-center items-center w-36 h-36 sm:w-64 sm:h-64">
+            <motion.div variants={{ hidden: { scaleY: 0 }, visible: { scaleY: 1 } }} transition={{ delay: 0.8 }} className=" origin-top w-full h-[20%] top-0 absolute bg-[#17191b]" initial="hidden" animate={mainControls}><div className=" origin-top w-full h-[20%] top-0 absolute bg-[#17191b]"></div></motion.div>
+            <motion.div variants={{ hidden: { scale: 0 }, visible: { scale: 1 } }} transition={{ delay: 1 }} initial="hidden" className="w-20 sm:w-48 h-20 sm:h-48 z-10 flex justify-center items-center bg-[#878c8e]" animate={mainControls}><div className="w-48 h-48 z-10 flex justify-center items-center bg-[#878c8e]">
+              <motion.div variants={{ hidden: { scale: 0 }, visible: { scale: 1 } }} transition={{ delay: 1.2 }} initial="hidden" className=" w-10 sm:w-36 h-10 sm:h-36 bg-[#17191b] flex items-center justify-center" animate={mainControls}><div className=" w-36 h-36 bg-[#17191b] flex items-center justify-center">
+                <motion.div variants={{ hidden: { scale: 0 }, visible: { scale: 1 } }} transition={{ delay: 1.4 }} initial="hidden" className="w-6 sm:w-20 h-6 sm:h-20 bg-[#f1f2ee]" animate={mainControls}><div className="w-20 h-20 bg-[#f1f2ee]"></div></motion.div>
+              </div></motion.div>
+            </div></motion.div>
+            <motion.div variants={{ hidden: { scaleY: 0 }, visible: { scaleY: 1 } }} transition={{ delay: 0.8 }} initial="hidden" className="origin-bottom w-full h-[20%] bottom-0 absolute bg-[#17191b]" animate={mainControls}><div className="origin-bottom w-full h-[20%] bottom-0 absolute bg-[#17191b]"></div></motion.div>
+          </div>
+
+          <div className="flex flex-col gap-y-5">
+            <motion.div variants={{ hidden: { opacity: 0, y: 40 }, visible: { opacity: 1, y: 0 } }} transition={{ delay: 1.5 }} initial="hidden" animate={mainControls}><p className="unbounded font-light text-md sm:text-lg text-[#17191b]">Welcome to VivaVersa, where our passionate <br /> team of digital experts drives business <br /> success in the dynamic online world.</p></motion.div>
+            <motion.div variants={{ hidden: { opacity: 0, y: 40 }, visible: { opacity: 1, y: 0 } }} transition={{ delay: 0.65 }} initial="hidden" animate={mainControls}><button className="unbounded px-10 py-3 bg-[#17191b] w-max text-[#f1f2ee] rounded-sm font-light">ABOUT</button></motion.div>
           </div>
         </div>
-
-        {/* <div className="mt-6">
-          <p className="unbounded text-[16px] font-regular text-[#878c8e] hidden">At VivaVersa, we're more than just a business. We're a team of passionate individuals <br /> dedicated to briefly describe your mission and values</p>
-        </div> */}
-
-        <div className="mt-24 relative hidden">
-          <h1 className="text-[34px] uppercase unbounded text-[#17191b] font-light leading-[70px]">Driving digital success through expert marketing strategies and <br /> data-driven solutions. </h1>
-        </div>
-
-        <p className=" mt-10 unbounded text-[16px] text-[#878c8e]">Driving digital success through expert marketing strategies and <br /> data-driven solutions.</p>
-        
       </div>
 
-      <div className="z-10 w-screen relative h-full gap-y-16 sm:gap-y-20 flex flex-col bg-[#17191b] p-8 py-16 sm:py-12 sm:p-12  sm:pr-16">
+      <div className="z-10 w-screen relative h-full gap-y-16 sm:gap-y-20 flex flex-col bg-[#17191b] p-8 py-16 sm:py-12 sm:p-12 sm:pb-44  sm:pr-16">
 
         <div className="flex flex-col">
           <div className="w-full justify-between gap-y-8 sm:gap-y-0 flex flex-col-reverse sm:flex-row  items-end sm:items-center">
 
-            <div className="flex flex-col">
+            <motion.div variants={{ hidden: { opacity: 0, y: 70 }, visible: { opacity: 1, y: 0 } }} transition={{ delay: 0.4 }} initial="hidden" animate={servicesControls}><div>
               <h1 className="unbounded text-[38px] font-light text-[#f1f2ee] text-right sm:text-left">SERVICES <br /> WHAT WE’RE GOOD AT</h1>
-            </div>
+            </div></motion.div>
 
-            <div onClick={() => router.push('/services')} className="flex servicesLink cursor-pointer relative items-center gap-x-4">
+            <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} transition={{ delay: 0.6 }} initial="hidden" animate={servicesControls}><div onClick={() => router.push('/services')} className="flex servicesLink cursor-pointer relative items-center gap-x-4">
               <h2 className="unbounded text-xl text-[#f1f2ee] font-light relative">SERVICES</h2>
               <div className=" transition-all flex justify-end w-14 h-14 relative">
                 <div className=" transition-all whiteCube w-[50%] h-full bg-[#f1f2ee]"></div>
                 <div className=" transition-all graycube w-8 h-8 bg-[#878c8e] absolute left-[50%] top-[50%] translate-y-[-50%] translate-x-[-50%] "></div>
               </div>
-            </div>
+            </div></motion.div>
           </div>
 
-          <p className=" mt-10 unbounded text-[16px] text-[#878c8e]">We provide tailored services for businesses to succeed in the digital landscape.</p>
+          <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} transition={{ delay: 0.75 }} initial="hidden" animate={servicesControls}><p className=" mt-10 unbounded text-[16px] text-[#878c8e]">We provide tailored services for businesses to succeed in the digital landscape.</p></motion.div>
 
         </div>
 
-        <div className="">
-          <div className="py-10 border-b-2 border-[#f1f2ee]">
-            <h1 className="text-2xl sm:text-[32px] text-[#f1f2ee] unbounded font-light gap-x-4 flex items-center"><span className="text-[#878c8e]">01</span> SOCIAL MEDIA MARKETING</h1>
-          </div>
+        <div ref={ref2}>
+          <motion.div variants={{ hidden: { opacity: 0, x: -40 }, visible: { opacity: 1, x: 0 } }} transition={{ delay: 0.7 }} initial="hidden" animate={servicesControls}> <div className="py-10 border-b-2 border-[#f1f2ee]">
+            <h1 className="text-2xl sm:text-[32px] text-[#f1f2ee] unbounded font-light hover:font-medium transition-all duration-300 gap-x-4 flex items-center"><span className="text-[#878c8e]">01</span> SOCIAL MEDIA MARKETING</h1>
+          </div></motion.div>
 
-          <div className="py-10 border-b-2 border-[#f1f2ee]">
-            <h1 className="text-2xl sm:text-[32px] text-[#f1f2ee] unbounded font-light gap-x-4 flex items-center"><span className="text-[#878c8e]">02</span> WEB DESIGN</h1>
-          </div>
+          <motion.div variants={{ hidden: { opacity: 0, x: -40 }, visible: { opacity: 1, x: 0 } }} transition={{ delay: 0.8 }} initial="hidden" animate={servicesControls}> <div className="py-10 border-b-2 border-[#f1f2ee]">
+            <h1 className="text-2xl sm:text-[32px] text-[#f1f2ee] unbounded font-light hover:font-medium transition-all duration-300 gap-x-4 flex items-center"><span className="text-[#878c8e]">02</span> WEB DESIGN</h1>
+          </div></motion.div>
 
-          <div className="py-10 border-b-2 border-[#f1f2ee]">
-            <h1 className="text-2xl sm:text-[32px] text-[#f1f2ee] unbounded font-light gap-x-4 flex items-center"><span className="text-[#878c8e]">03</span> WEB DEVELOPMENT</h1>
-          </div>
+          <motion.div variants={{ hidden: { opacity: 0, x: -40 }, visible: { opacity: 1, x: 0 } }} transition={{ delay: 0.9 }} initial="hidden" animate={servicesControls}> <div className="py-10 border-b-2 border-[#f1f2ee]">
+            <h1 className="text-2xl sm:text-[32px] text-[#f1f2ee] unbounded font-light hover:font-medium transition-all duration-300 gap-x-4 flex items-center"><span className="text-[#878c8e]">03</span> WEB DEVELOPMENT</h1>
+          </div></motion.div>
         </div>
       </div>
 
-      <div></div>
+      <div className="h-screen w-screen bg-[#f1f2ee]">
+
+      </div>
 
     </div>
   )
