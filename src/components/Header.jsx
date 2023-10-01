@@ -30,7 +30,7 @@ const Header = () => {
           width={55}
           height={55}
           alt=''
-          priority={true}
+
         />
 
 
@@ -48,7 +48,6 @@ const Header = () => {
         width={55}
         height={55}
         alt=''
-        priority={true}
       />
 
       <div className='hidden sm:flex gap-x-10 items-center ml-16'>

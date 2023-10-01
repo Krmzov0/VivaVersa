@@ -85,3 +85,7 @@ body {
   filter: grayscale(100%);
   filter: #878c8e;
 }
+
+.logo{
+  mix-blend-mode: color-burn;
+}
