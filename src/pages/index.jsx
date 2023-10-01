@@ -75,15 +75,15 @@ export default function Home() {
 
         <div className="mt-14">
           <motion.div initial={{ opacity: 0, y: 80 }} whileInView={{ opacity: 1, y: 0 }} >
-            <h1 className="unbounded text-[16px] hidden sm:block  sm:text-[#17191b] text-[#878c8e] sm:text-4xl font-light leading-normal sm:leading-[85px]"><span className="">VIVAVERSA</span>, A DIGITAL DESIGN AGENCY WITH GLOBAL CLIENTS WORLDWIDE, KNOWS THAT PRODUCT DESIGN ISN'T JUST ABOUT AESTHETICS - IT'S ABOUT CRAFTING SOLUTIONS THAT GIVE YOU A COMPETITIVE EDGE BY ENHANCING CONVERSION RATES, USER ENGAGEMENT, AND BRAND PERCEPTION.</h1>
+            <h1 className="unbounded text-[16px] hidden sm:block  sm:text-[#17191b] text-[#878c8e] sm:text-4xl font-light leading-normal sm:leading-[85px]"><span className="">VIVAVERSA</span>, A DIGITAL DESIGN AGENCY WITH GLOBAL CLIENTS WORLDWIDE, KNOWS THAT PRODUCT DESIGN ISN&apos;T JUST ABOUT AESTHETICS - IT&apos;S ABOUT CRAFTING SOLUTIONS THAT GIVE YOU A COMPETITIVE EDGE BY ENHANCING CONVERSION RATES, USER ENGAGEMENT, AND BRAND PERCEPTION.</h1>
           </motion.div>
 
           <div className="flex flex-col gap-y-4">
             <motion.div initial={{ opacity: 0, y: 80 }} whileInView={{ opacity: 1, y: 0 }}>
-              <h1 className="flex sm:hidden unbounded text-[16px]  sm:text-[#17191b] text-[#878c8e] sm:text-4xl font-light leading-normal sm:leading-[85px]">VIVAVERSA, A DIGITAL DESIGN AGENCY WITH GLOBAL CLIENTS WORLDWIDE, KNOWS THAT PRODUCT DESIGN ISN'T JUST ABOUT AESTHETICS </h1>
+              <h1 className="flex sm:hidden unbounded text-[16px]  sm:text-[#17191b] text-[#878c8e] sm:text-4xl font-light leading-normal sm:leading-[85px]">VIVAVERSA, A DIGITAL DESIGN AGENCY WITH GLOBAL CLIENTS WORLDWIDE, KNOWS THAT PRODUCT DESIGN ISN&apos;T JUST ABOUT AESTHETICS </h1>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 80 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
-              <h1 className="flex sm:hidden unbounded text-[16px]  sm:text-[#17191b] text-[#878c8e] sm:text-4xl font-light leading-normal sm:leading-[85px]">IT'S ABOUT CRAFTING SOLUTIONS THAT GIVE YOU A COMPETITIVE EDGE BY ENHANCING CONVERSION RATES, USER ENGAGEMENT, AND BRAND PERCEPTION.</h1>
+              <h1 className="flex sm:hidden unbounded text-[16px]  sm:text-[#17191b] text-[#878c8e] sm:text-4xl font-light leading-normal sm:leading-[85px]">IT&apos;S ABOUT CRAFTING SOLUTIONS THAT GIVE YOU A COMPETITIVE EDGE BY ENHANCING CONVERSION RATES, USER ENGAGEMENT, AND BRAND PERCEPTION.</h1>
             </motion.div>
           </div>
 
@@ -128,7 +128,7 @@ export default function Home() {
           <div className="w-full justify-between gap-y-8 sm:gap-y-0 flex flex-col-reverse sm:flex-row  items-end sm:items-center">
 
             <motion.div initial={{ opacity: 0, y: 70 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} ><div>
-              <h1 className="unbounded text-[38px] font-light text-[#f1f2ee] text-right sm:text-left">SERVICES <br /> WHAT WE’RE GOOD AT</h1>
+              <h1 className="unbounded text-[38px] font-light text-[#f1f2ee] text-right sm:text-left">SERVICES <br /> WHAT WE&apos;RE GOOD AT</h1>
             </div></motion.div>
 
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}  ><div onClick={() => router.push('/services')} className="flex servicesLink cursor-pointer relative items-center gap-x-4">
@@ -171,31 +171,31 @@ export default function Home() {
         <div className="grid mt-10 sm:mt-0 grid-cols-2 grid-rows-2 w-full sm:w-[60%]">
           <div className="p-24 border border-t-0 border-b-0 border-[#17191b] border-l-0 flex justify-center items-center">
             <motion.div className="stackImg absolute w-24 sm:w-32" transition={{ duration: 0.4 }} initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
-              <Image className="stackImg absolute w-24 sm:w-32" src="/next.svg" width={30} height={30} />
+              <Image alt="" className="stackImg absolute w-24 sm:w-32" src="/next.svg" width={30} height={30} />
             </motion.div>
           </div>
 
           <div className="p-24 border-[#17191b] flex justify-center items-center">
             <motion.div className="stackImg absolute w-24 sm:w-32" transition={{ duration: 0.4 }} initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
-              <Image className="stackImg absolute w-24 sm:w-32" src="/framer.svg" width={30} height={30} />
+              <Image alt="" className="stackImg absolute w-24 sm:w-32" src="/framer.svg" width={30} height={30} />
             </motion.div>
           </div>
 
           <div className="p-24 border border-t-1 border-[#17191b] border-l-0  flex  justify-center items-center">
             <motion.div className="stackImg absolute w-24 sm:w-32" transition={{ duration: 0.4 }} initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
-              <Image className="stackImg absolute w-24 sm:w-32" src="/ps.svg" width={30} height={30} />
+              <Image alt="" className="stackImg absolute w-24 sm:w-32" src="/ps.svg" width={30} height={30} />
             </motion.div>
           </div>
 
           <div className="p-24 border border-[#17191b] border-r-0 border-l-0  flex justify-center items-center">
             <motion.div className="stackImg absolute w-24 sm:w-32" initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
-              <Image className="stackImg absolute w-24 sm:w-32" src="/il.svg" width={30} height={30} />
+              <Image alt="" className="stackImg absolute w-24 sm:w-32" src="/il.svg" width={30} height={30} />
             </motion.div>
           </div>
 
           <div className="p-24  border border-t-0 border-b-0 border-[#17191b] border-l-0  flex justify-center items-center">
             <motion.div className="stackImg absolute w-24 sm:w-32" initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
-              <Image className="stackImg absolute w-24 sm:w-32" src="/meta.svg" width={30} height={30} />
+              <Image alt="" className="stackImg absolute w-24 sm:w-32" src="/meta.svg" width={30} height={30} />
             </motion.div>
           </div>
 
