@@ -81,9 +81,7 @@ body {
 .stackImg {
   aspect-ratio: 3/2;
   object-fit: contain;
-  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  filter: #878c8e;
 }
 
 .logo{

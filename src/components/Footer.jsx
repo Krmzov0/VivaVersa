@@ -8,12 +8,12 @@ const Footer = () => {
             <div className='flex w-full flex-col sm:flex-row justify-between items-start gap-y-4 sm:gap-y-0 sm:items-center'>
                 <h1 className='unbounded text-[24px] sm:text-[30px] font-light text-[#f1f2ee]'>DON’T LET YOUR IDEA STAY A DREAM.</h1>
                 <Image
-                    className='flex w-20 sm:w-fit'
-                    src="/White.png"
-                    width={100}
-                    height={100}
+                    className='flex w-20'
+                    src="/WhiteLogo.svg"
+                    width={10}
+                    height={10}
                     alt=''
-                    priority={true}
+                   
                 />
             </div>
 
