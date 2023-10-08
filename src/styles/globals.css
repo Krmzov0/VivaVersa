@@ -87,3 +87,15 @@ body {
 .logo{
   mix-blend-mode: color-burn;
 }
+
+@keyframes slider {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}
+.AboutSlider{
+  animation: 20s slider infinite linear;
+}

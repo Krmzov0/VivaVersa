@@ -31,6 +31,7 @@ const Header = () => {
 
       <div className='flex sm:hidden items-center justify-between w-full gap-x-2'>
         <Image
+          onClick={() => router.push("/")}
           src="/BlackLogo.svg"
           width={55}
           height={55}
@@ -82,7 +83,7 @@ const Header = () => {
         </motion.div>}
 
 
-        <div className='mt-12 ml-1 gap-y-6 flex flex-col'>
+        <div className='mt-12 ml-1 gap-y-8 flex flex-col'>
           {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.5 }}><h2 onClick={() => router.push("/")} className='unbounded hover:text-[#878c8e] uppercase duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#f1f2ee] text-4xl'>home</h2></motion.div>}
           {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.65 }}><h2 onClick={() => router.push("/about")} className='unbounded hover:text-[#878c8e] uppercase duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#f1f2ee] text-4xl'>about</h2></motion.div>}
           {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.75 }}><h2 onClick={() => router.push("/services")} className='unbounded hover:text-[#878c8e] uppercase duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#f1f2ee] text-4xl'>services</h2></motion.div>}
