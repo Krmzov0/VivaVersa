@@ -57,7 +57,7 @@ const Header = () => {
         alt=''
       />
 
-      <div className='hidden sm:flex gap-x-10 items-center ml-16'>
+      <div className='hidden sm:flex gap-x-12 items-center ml-16'>
         <h2 onClick={() => router.push("/")} className='unbounded hover:text-[#17191b] duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#878c8e] text-lg'>home</h2>
         <h2 onClick={() => router.push("/about")} className='unbounded hover:text-[#17191b] duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#878c8e] text-lg'>about</h2>
         <h2 onClick={() => router.push("/services")} className='unbounded hover:text-[#17191b] duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#878c8e] text-lg'>services</h2>

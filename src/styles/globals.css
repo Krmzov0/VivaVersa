@@ -8,6 +8,10 @@
   src: url('../assets/fonts/Unbounded-VariableFont_wght.ttf');
 }
 
+*{
+  font-family: unbounded;
+}
+
 .unbounded {
   font-family: unbounded;
 }
