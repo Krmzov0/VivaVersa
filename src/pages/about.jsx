@@ -86,11 +86,11 @@ const about = () => {
             <motion.div initial={{ y: "100%" }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.1 }}><h1 className="overflow-hidden uppercase">strategies and captivating content that drives results,</h1></motion.div>
           </div>
           <div className="overflow-hidden">
-            <motion.div initial={{ y: "100%" }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.1 }}><h1 className="overflow-hidden uppercase">Let's elevate your online presence together!</h1></motion.div>
+            <motion.div initial={{ y: "100%" }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.1 }}><h1 className="overflow-hidden uppercase">Let&apos;s elevate your online presence together!</h1></motion.div>
           </div>
         </div>
 
-        <motion.div initial={{ y: 40 }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7 }} className='mt-10 flex sm:hidden'><h1 className=" text-[#878c8e] text-[22px] overflow-hidden uppercase leading-[44px]">Unlock your brand&apos;s full potential, with your trusted Social Media Marketing Agency. We specialize in crafting compelling social media strategies and captivating content that drives results, Let's elevate your online</h1></motion.div>
+        <motion.div initial={{ y: 40 }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7 }} className='mt-10 flex sm:hidden'><h1 className=" text-[#878c8e] text-[22px] overflow-hidden uppercase leading-[44px]">Unlock your brand&apos;s full potential, with your trusted Social Media Marketing Agency. We specialize in crafting compelling social media strategies and captivating content that drives results, Let&apos;s elevate your online</h1></motion.div>
 
       </div>
 
