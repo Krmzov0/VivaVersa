@@ -16,6 +16,7 @@ const Footer = () => {
                     width={10}
                     height={10}
                     alt=''
+                    priority={true}
                    
                 />
             </div>
@@ -36,7 +37,7 @@ const Footer = () => {
 
                 <div className='flex flex-col gap-x-[20px] gap-y-[20px]'>
                     <motion.div initial={{ x: -20, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} ><h4 className='unbounded text-[16px] sm:text-[14px] text-[#878c8e]'>Business</h4></motion.div>
-                    <motion.div initial={{ x: -20, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ delay: 0.2 }} ><h4 className='unbounded  text-lg sm:text-[15px] font-light text-[#f1f2ee]'>info@vivaversa.com</h4></motion.div>
+                    <motion.div initial={{ x: -20, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ delay: 0.2 }} ><h4 className='unbounded  text-lg sm:text-[15px] font-light text-[#f1f2ee]'>info@vivaversa.agency</h4></motion.div>
                 </div>
             </div>
 

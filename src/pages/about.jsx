@@ -6,7 +6,7 @@ const about = () => {
   return (
     <>
       <Header />
-      <div className='h-max overflow-x-hidden w-screen relative p-0 flex flex-col justify-start gap-y-32 items-start'>
+      <div className='h-screen mb-[-15rem] sm:mb-0 overflow-x-hidden w-screen relative p-0 flex flex-col justify-start gap-y-32 items-start'>
         <div className='pl-4 sm:pl-12 pt-20'>
           <h1 className='text-5xl gap-y-6 flex flex-col sm:gap-y-0 sm:text-6xl font-light hover:font-light sm:hover:font-medium leading-[40px] sm:leading-[90px] transition-all duration-300'>
             <div className='flex gap-x-2 sm:gap-x-4 overflow-hidden'>
@@ -90,8 +90,14 @@ const about = () => {
           </div>
         </div>
 
-        <motion.div initial={{ y: 40 }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7 }} className='mt-10 flex sm:hidden'><h1 className=" text-[#878c8e] text-[14px] overflow-hidden uppercase leading-[34px]">VIVAVERSA, A DIGITAL DESIGN AGENCY WITH GLOBAL CLIENTS WORLDWIDE, KNOWS THAT PRODUCT DESIGN ISN&apos;T JUST ABOUT AESTETHICS.</h1></motion.div> <br />
-        <motion.div initial={{ y: 40 }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7 }} className='flex sm:hidden'><h1 className=" text-[#878c8e] text-[14px] overflow-hidden uppercase leading-[34px]"> IT&apos;S ABOUT CRAFTING SOLUTIONS THAT GIVE YOU A COMPETITIVE EDGE BY ENHANCING CONVERSION RATES, USER ENGAGEMENT, AND BRAND PERCEPTION.</h1></motion.div>
+        <motion.div initial={{ y: 40 }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7 }} className='mt-10 flex sm:hidden'><h1 className=" text-[#878c8e] text-[17px] overflow-hidden uppercase leading-[34px]">VIVAVERSA, A DIGITAL DESIGN AGENCY WITH GLOBAL CLIENTS WORLDWIDE, KNOWS THAT PRODUCT DESIGN ISN&apos;T JUST ABOUT AESTETHICS.</h1></motion.div> <br />
+
+        <div className='flex mt-10 flex-col justify-end gap-y-10'>
+          <div className='overflow-hidden'>
+            <motion.div className='overflow-hidden' initial={{ y: "100%" }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7 }}><h1 className=" text-right overflow-hidden text-[32px] sm:text-5xl font-light text-[#f1f2ee]">VISION</h1></motion.div>
+          </div>
+          <motion.div initial={{ y: 40 }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7 }} className='flex sm:hidden'><h1 className=" text-[#878c8e] text-[17px] text-right overflow-hidden uppercase leading-[34px]"> IT&apos;S ABOUT CRAFTING SOLUTIONS THAT GIVE YOU A COMPETITIVE EDGE BY ENHANCING CONVERSION RATES, USER ENGAGEMENT, AND BRAND PERCEPTION.</h1></motion.div>
+        </div>
       </div>
 
 
@@ -101,7 +107,7 @@ const about = () => {
 
         <div className='flex flex-col sm:px-0 w-full sm:w-[50%] gap-y-2 sm:gap-y-8'>
           <div className='flex w-full sm:max-w-full flex-col py-8 pt-0 gap-y-7'>
-            <motion.div initial={{ opacity: 0, scale: 1.07 }} whileInView={{ opacity: 1, scale: 1,  }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }} className='w-full overflow-hidden h-44 flex justify-center gap-x-12 sm:gap-x-16 items-center sm:h-72 bg-[#17191b]'>
+            <motion.div initial={{ opacity: 0, scale: 1.07 }} whileInView={{ opacity: 1, scale: 1, }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }} className='w-full overflow-hidden h-44 flex justify-center gap-x-12 sm:gap-x-16 items-center sm:h-72 bg-[#17191b]'>
 
               <div className="sm:w-28 sm:h-28 w-20 h-20 flex justify-center relative items-center">
 

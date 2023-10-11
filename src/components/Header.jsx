@@ -36,15 +36,16 @@ const Header = () => {
           width={55}
           height={55}
           alt=''
+          priority={true}
 
         />
 
 
         <div className='flex sm:hidden'>
           <svg onClick={handleMenuToggle} width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4.5 12H19.5" stroke="#17191b" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" />
-            <path d="M4.5 17.7692H19.5" stroke="#17191b" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" />
-            <path d="M4.5 6.23077H19.5" stroke="#17191b" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M4.5 12H19.5" stroke="#17191b" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" />
+            <path d="M4.5 17.7692H19.5" stroke="#17191b" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" />
+            <path d="M4.5 6.23077H19.5" stroke="#17191b" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" />
           </svg>
 
         </div>
@@ -56,6 +57,7 @@ const Header = () => {
         width={55}
         height={55}
         alt=''
+        priority={true}
       />
 
       <div className='hidden sm:flex gap-x-12 items-center ml-16'>
@@ -78,8 +80,8 @@ const Header = () => {
           />
 
           <svg onClick={handleMenuToggle} width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M19 5L5 19" stroke="#f1f2ee" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M19 19L5 5" stroke="#f1f2ee" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M19 5L5 19" stroke="#f1f2ee" strokeWidth="1.5" strokeLinecap="round" stroke-linejoin="round" />
+            <path d="M19 19L5 5" stroke="#f1f2ee" strokeWidth="1.5" strokeLinecap="round" stroke-linejoin="round" />
           </svg>
 
         </motion.div>}
