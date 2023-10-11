@@ -27,7 +27,7 @@ const Header = () => {
   }
 
   return (
-    <div className='bg-transparent relative top-0 z-50 mx-auto pt-4 sm:pt-6 px-4 sm:px-12 flex w-full justify-between items-center'>
+    <div className='bg-[#f1f2ee] relative  top-0 z-50 mx-auto pt-4 sm:py-4 px-4 sm:px-12 flex w-full justify-between items-center'>
 
       <div className='flex sm:hidden items-center justify-between w-full gap-x-2'>
         <Image
@@ -42,10 +42,11 @@ const Header = () => {
 
         <div className='flex sm:hidden'>
           <svg onClick={handleMenuToggle} width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M19.5 12L11.5 12" stroke="#17191b" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" />
-            <path d="M19.5 5.75L4.5 5.75" stroke="#17191b" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" />
-            <path d="M19.5 18.25L4.5 18.25" stroke="#17191b" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" />
+            <path d="M4.5 12H19.5" stroke="#17191b" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M4.5 17.7692H19.5" stroke="#17191b" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M4.5 6.23077H19.5" stroke="#17191b" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" />
           </svg>
+
         </div>
       </div>
 
@@ -77,9 +78,10 @@ const Header = () => {
           />
 
           <svg onClick={handleMenuToggle} width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M19 5L5 19" stroke="#f1f2ee" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="M19 19L5 5" stroke="#f1f2ee" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M19 5L5 19" stroke="#f1f2ee" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M19 19L5 5" stroke="#f1f2ee" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
+
         </motion.div>}
 
 

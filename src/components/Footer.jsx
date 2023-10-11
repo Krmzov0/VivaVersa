@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 const Footer = () => {
+    
+    const router = useRouter()
 
     return (
         <div className='relative bottom-0  flex flex-col w-screen h-max py-20  pb-8 px-6 sm:px-12 bg-[#17191b]'>
@@ -58,13 +61,13 @@ const Footer = () => {
             <div className='mt-10 sm:mt-14' >
                 <div className='flex sm:items-center flex-col justify-start items-start sm:flex-row gap-y-[20px] gap-x-0 sm:gap-y-0 sm:gap-x-[20px]'>
                     <div className='flex flex-row gap-x-[20px] '>
-                        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} ><h4 className='unbounded text-lg sm:text-[15px] font-light hover:text-[#878c8e] transition-all cursor-pointer text-[#f1f2ee]'>Home</h4></motion.div>
-                        <motion.div initial={{ x: -20, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} ><h4 className='unbounded text-lg sm:text-[15px] font-light hover:text-[#f1f2ee] transition-all cursor-pointer text-[#878c8e]'>About</h4></motion.div>
+                        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} ><h4 className='unbounded text-lg sm:text-[15px] font-light hover:text-[#878c8e] transition-all cursor-pointer text-[#f1f2ee]' onClick={() => router.push("/")}>Home</h4></motion.div>
+                        <motion.div initial={{ x: -20, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} ><h4 className='unbounded text-lg sm:text-[15px] font-light hover:text-[#f1f2ee] transition-all cursor-pointer text-[#878c8e]' onClick={() => router.push("/about")}>About</h4></motion.div>
                     </div>
 
                     <div className='flex flex-row gap-x-[20px] '>
-                        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} ><h4 className='unbounded text-lg sm:text-[15px] font-light hover:text-[#878c8e] transition-all cursor-pointer text-[#f1f2ee]'>Services</h4></motion.div>
-                        <motion.div initial={{ x: -20, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} ><h4 className='unbounded text-lg sm:text-[15px] font-light hover:text-[#f1f2ee] transition-all cursor-pointer text-[#878c8e]'>Contact</h4></motion.div>
+                        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} ><h4 className='unbounded text-lg sm:text-[15px] font-light hover:text-[#878c8e] transition-all cursor-pointer text-[#f1f2ee]' onClick={() => router.push("/services")}>Services</h4></motion.div>
+                        <motion.div initial={{ x: -20, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} ><h4 className='unbounded text-lg sm:text-[15px] font-light hover:text-[#f1f2ee] transition-all cursor-pointer text-[#878c8e]' onClick={() => router.push("/contact")}>Contact</h4></motion.div>
                     </div>
                 </div>
             </div>
@@ -73,8 +76,3 @@ const Footer = () => {
 }
 
 export default Footer
-
-//128
-//75
-//25
-//30
