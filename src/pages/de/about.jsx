@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+import Header from '@/components/HeaderDe'
+import Footer from '@/components/FooterDe'
 
 const about = () => {
   return (
@@ -11,7 +11,7 @@ const about = () => {
         <div className='pl-4 sm:pl-12 pt-20'>
           <h1 className='text-5xl gap-y-6 flex flex-col sm:gap-y-0 sm:text-6xl font-light hover:font-light sm:hover:font-medium leading-[40px] sm:leading-[90px] transition-all duration-300'>
             <div className='flex gap-x-2 sm:gap-x-4 overflow-hidden'>
-              <motion.div className='overflow-hidden' initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.1 }} ><h1 className='overflow-hidden'>WE</h1></motion.div>
+              <motion.div className='overflow-hidden' initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.1 }} ><h1 className='overflow-hidden'>WE De</h1></motion.div>
               <motion.div className='overflow-hidden' initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.2 }} ><h1 className='overflow-hidden'>ARE</h1></motion.div>
               <motion.div className='overflow-hidden hidden sm:flex' initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.3 }} ><h1 className='overflow-hidden'>VIVA</h1></motion.div>
               <motion.div className='overflow-hidden hidden sm:flex' initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.4 }} ><h1 className='overflow-hidden'>VERSA</h1></motion.div>
@@ -93,7 +93,7 @@ const about = () => {
 
         <motion.div initial={{ y: 40 }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7 }} className='mt-10 flex sm:hidden'><h1 className=" text-[#878c8e] text-[17px] overflow-hidden uppercase leading-[34px]">VIVAVERSA, A DIGITAL DESIGN AGENCY WITH GLOBAL CLIENTS WORLDWIDE, KNOWS THAT PRODUCT DESIGN ISN&apos;T JUST ABOUT AESTETHICS.</h1></motion.div> <br />
 
-        <div className='flex mt-10 flex-col justify-end gap-y-10'>
+        <div className='flex mt-10 flex-col sm:hidden justify-end gap-y-10'>
           <div className='overflow-hidden'>
             <motion.div className='overflow-hidden' initial={{ y: "100%" }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7 }}><h1 className=" text-right overflow-hidden text-[32px] sm:text-5xl font-light text-[#f1f2ee]">VISION</h1></motion.div>
           </div>

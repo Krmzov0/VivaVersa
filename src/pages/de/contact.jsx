@@ -1,12 +1,12 @@
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
+import Footer from '@/components/FooterDe'
+import Header from '@/components/HeaderDe'
 import React from 'react'
 
 const contact = () => {
   return (
     <>
     <Header />
-    <div>contact</div>
+    <div>contact de</div>
 
     <Footer />
     </>

@@ -1,12 +1,13 @@
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
+import Footer from '@/components/FooterDe'
+import Header from '@/components/HeaderDe'
 import React from 'react'
 
 const services = () => {
   return (
     <>
       <Header />
-      <div>services</div>
+      <div>services de</div>
+
       <Footer />
     </>
   )

@@ -31,7 +31,7 @@ const Header = () => {
 
       <div className='flex sm:hidden items-center justify-between w-full gap-x-2'>
         <Image
-          onClick={() => router.push("/")}
+          onClick={() => router.push("/de/home")}
           src="/BlackLogo.svg"
           width={55}
           height={55}
@@ -52,7 +52,7 @@ const Header = () => {
       </div>
 
       <Image className='cursor-pointer hidden sm:flex'
-        onClick={() => router.push("/")}
+        onClick={() => router.push("/de/home")}
         src="/BlackLogo.svg"
         width={55}
         height={55}
@@ -61,10 +61,10 @@ const Header = () => {
       />
 
       <div className='hidden sm:flex gap-x-12 items-center ml-16'>
-        <h2 onClick={() => router.push("/")} className='unbounded hover:text-[#17191b] duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#878c8e] text-lg'>home</h2>
-        <h2 onClick={() => router.push("/about")} className='unbounded hover:text-[#17191b] duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#878c8e] text-lg'>about</h2>
-        <h2 onClick={() => router.push("/services")} className='unbounded hover:text-[#17191b] duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#878c8e] text-lg'>services</h2>
-        <h2 onClick={() => router.push("/contact")} className='unbounded hover:text-[#17191b] duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#878c8e] text-lg'>contact</h2>
+        <h2 onClick={() => router.push("/de/home")} className='unbounded hover:text-[#17191b] duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#878c8e] text-lg'>home</h2>
+        <h2 onClick={() => router.push("/de/about")} className='unbounded hover:text-[#17191b] duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#878c8e] text-lg'>about</h2>
+        <h2 onClick={() => router.push("/de/services")} className='unbounded hover:text-[#17191b] duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#878c8e] text-lg'>services</h2>
+        <h2 onClick={() => router.push("/de/contact")} className='unbounded hover:text-[#17191b] duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#878c8e] text-lg'>contact</h2>
       </div>
 
 
@@ -88,17 +88,17 @@ const Header = () => {
 
 
         <div className='mt-12 ml-1 gap-y-8 flex flex-col'>
-          {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.5 }}><h2 onClick={() => router.push("/")} className='unbounded hover:text-[#878c8e] uppercase duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#f1f2ee] text-4xl'>home</h2></motion.div>}
-          {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.65 }}><h2 onClick={() => router.push("/about")} className='unbounded hover:text-[#878c8e] uppercase duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#f1f2ee] text-4xl'>about</h2></motion.div>}
-          {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.75 }}><h2 onClick={() => router.push("/services")} className='unbounded hover:text-[#878c8e] uppercase duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#f1f2ee] text-4xl'>services</h2></motion.div>}
-          {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.85 }}><h2 onClick={() => router.push("/contact")} className='unbounded hover:text-[#878c8e] uppercase duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#f1f2ee] text-4xl'>contact</h2></motion.div>}
+          {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.5 }}><h2 onClick={() => router.push("/de/home")} className='unbounded hover:text-[#878c8e] uppercase duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#f1f2ee] text-4xl'>home</h2></motion.div>}
+          {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.65 }}><h2 onClick={() => router.push("/de/about")} className='unbounded hover:text-[#878c8e] uppercase duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#f1f2ee] text-4xl'>about</h2></motion.div>}
+          {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.75 }}><h2 onClick={() => router.push("/de/services")} className='unbounded hover:text-[#878c8e] uppercase duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#f1f2ee] text-4xl'>services</h2></motion.div>}
+          {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.85 }}><h2 onClick={() => router.push("/de/contact")} className='unbounded hover:text-[#878c8e] uppercase duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#f1f2ee] text-4xl'>contact</h2></motion.div>}
         </div>
 
       </motion.div>}
 
       <motion.div whileHover={{ scale: 1.2 }} transition={{ type: "spring", stiffness: 400, damping: 17 }}>
         <MagneticHover>
-          <button onClick={() => router.push('/de/home')} className='hidden sm:flex unbounded text-[#17191b] font-regular transition-all cursor-pointer text-md'>Let&apos;s Talk!</button>
+          <button className='hidden sm:flex unbounded text-[#17191b] font-regular transition-all cursor-pointer text-md'>Let&apos;s Talk!</button>
         </MagneticHover>
       </motion.div>
 

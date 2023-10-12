@@ -1,4 +1,3 @@
-import Footer from '@/components/Footer'
 import '@/styles/globals.css'
 import { useRouter } from 'next/router'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -19,7 +18,6 @@ export default function App({ Component, pageProps }) {
           </motion.div>
         </motion.div>
       </AnimatePresence>
-      <Footer />
     </>
   )
 }

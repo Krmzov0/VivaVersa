@@ -1,11 +1,11 @@
-import AnimatedH1 from "../components/AnimatedHeader";
+import AnimatedH1 from "../../components/AnimatedHeader";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import React from "react";
-import MagneticHover from "@/components/MagneticHover";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import MagneticHover from "../../components/MagneticHover";
+import Header from "../../components/HeaderDe";
+import Footer from "@/components/FooterDe";
 
 export default function Home() {
 
@@ -18,7 +18,7 @@ export default function Home() {
 
         <div className="relative flex justify-start sm:justify-center gap-y-0 sm:gap-y-24 flex-col items-center h-max sm:h-screen w-full">
           <div className="flex flex-col justify-center items-center mt-14 sm:mt-0 relative">
-            <p className="text-[#878c8e]  font-light mb-3 sm:md-4 text-sm sm:text-[16px] text-center">DIGITAL MARKETING AGENCY</p>
+            <p className="text-[#878c8e]  font-light mb-3 sm:md-4 text-sm sm:text-[16px] text-center">DIGITAL MARKETING AGENCY GERMAN</p>
 
             <div>
               <AnimatedH1 />
@@ -52,7 +52,7 @@ export default function Home() {
         <div className="sm:p-12 sm:pt-0 w-screen h-full flex ">
           <div className="mt-16 flex justify-center relative items-center w-full h-[30vh] sm:h-[100vh] bg-[#17191b]">
             <MagneticHover >
-            <div className="hidden right-10 top-10 bg-[#f1f2ee] opacity-75 cursor-pointer rounded-full w-20 h-20 justify-center items-center">
+              <div className="hidden right-10 top-10 bg-[#f1f2ee] opacity-75 cursor-pointer rounded-full w-20 h-20 justify-center items-center">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8.5 4.5H5.5C4.94772 4.5 4.5 4.94772 4.5 5.5V18.5C4.5 19.0523 4.94772 19.5 5.5 19.5H8.5C9.05229 19.5 9.5 19.0523 9.5 18.5V5.5C9.5 4.94772 9.05229 4.5 8.5 4.5Z" stroke="#17191b" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M18.5 4.5H15.5C14.9477 4.5 14.5 4.94772 14.5 5.5V18.5C14.5 19.0523 14.9477 19.5 15.5 19.5H18.5C19.0523 19.5 19.5 19.0523 19.5 18.5V5.5C19.5 4.94772 19.0523 4.5 18.5 4.5Z" stroke="#17191b" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
