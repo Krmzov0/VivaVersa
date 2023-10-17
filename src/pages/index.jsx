@@ -71,7 +71,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className=" border h-max sm:h-max relative w-screen p-6 sm:p-12 py-28 sm:py-44 sm:pr-16 flex flex-col justify-center">
+        <div className=" h-max sm:h-max relative w-screen p-6 sm:p-12 py-28 sm:py-44 sm:pr-16 flex flex-col justify-center">
 
           <div className="w-full justify-between gap-y-8 sm:gap-y-0 flex flex-col-reverse sm:flex-row  items-end sm:items-center">
             <motion.div initial={{ opacity: 0, y: 70 }} whileInView={{ opacity: 1, y: 0 }}  >
@@ -127,7 +127,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="z-10 w-screen relative h-full gap-y-16 sm:gap-y-20 flex flex-col bg-[#17191b] p-8 py-16 sm:py-12 sm:p-12 pb-28 sm:pb-44  sm:pr-16">
+        <div className="z-0  w-screen relative h-full gap-y-16 sm:gap-y-20 flex flex-col bg-[#17191b] p-8 py-16 sm:py-12 sm:p-12 pb-28 sm:pb-44  sm:pr-16">
 
           <div className="flex flex-col">
             <div className="w-full justify-between gap-y-8 sm:gap-y-0 flex flex-col-reverse sm:flex-row  items-end sm:items-center">

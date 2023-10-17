@@ -93,7 +93,7 @@ const about = () => {
 
         <motion.div initial={{ y: 40 }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7 }} className='mt-10 flex sm:hidden'><h1 className=" text-[#878c8e] text-[17px] overflow-hidden uppercase leading-[34px]">VIVAVERSA, A DIGITAL DESIGN AGENCY WITH GLOBAL CLIENTS WORLDWIDE, KNOWS THAT PRODUCT DESIGN ISN&apos;T JUST ABOUT AESTETHICS.</h1></motion.div> <br />
 
-        <div className='flex mt-10 flex-col justify-end gap-y-10'>
+        <div className='flex sm:hidden mt-10 flex-col justify-end gap-y-10'>
           <div className='overflow-hidden'>
             <motion.div className='overflow-hidden' initial={{ y: "100%" }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7 }}><h1 className=" text-right overflow-hidden text-[32px] sm:text-5xl font-light text-[#f1f2ee]">VISION</h1></motion.div>
           </div>
