@@ -125,3 +125,13 @@ body {
   transform-origin: top;
   z-index: 999;
 }
+
+.gradient {
+  background: #17191b;
+  background: linear-gradient(0deg, #17191b 25%, rgba(0, 212, 255, 0) 75%);
+}
+
+.gradient2 {
+  background: #17191b;
+  background: linear-gradient(90deg, #17191b 0%, rgba(0, 212, 255, 0) 50%, #17191b 100%);
+}
