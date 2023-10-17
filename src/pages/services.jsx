@@ -45,7 +45,7 @@ const services = () => {
           <div>
             <div className="border-[#f1f2ee]">
               <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}><h1 className="text-2xl sm:text-[32px] text-[#f1f2ee]  font-light hover:font-light sm:hover:font-medium transition-all duration-300 gap-x-4 uppercase flex items-center w-full"><span className="text-[#878c8e]">01</span> COMPREHENSIVE ANALYSIS</h1></motion.div>
-              <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.2 }} ><p className='text-md text-[#f1f2eea7] mt-10'>We begin by thoroughly analyzing your current online presence, including your website's performance and your social media profiles.</p></motion.div>
+              <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.2 }} ><p className='text-md text-[#f1f2eea7] mt-10'>We begin by thoroughly analyzing your current online presence, including your website&apos;s performance and your social media profiles.</p></motion.div>
               <motion.div initial={{ x: -40 }} whileInView={{ x: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.2 }} className="origin-left w-full h-[2px] bg-[#f1f2ee] my-10"></motion.div>
             </div>
           </div>
