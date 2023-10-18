@@ -9,9 +9,9 @@ const services = () => {
       <Header />
       <div className='relative pb-12 md:pb-24 w-screen md:h-max h-max flex-col  flex justify-start items-center'>
         <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}>
-          <div className='mt-10 p-6 md:px-12'>
-            <h1 className='flex md:hidden font-light text-center text-[#17191b] text-4xl md:text-7xl leading-[60px] md:leading-[95px]'>TAKE AIM AT SUCCESS WITH OUR PRECISION</h1>
-            <h1 className='hidden md:flex font-light text-center text-[#17191b] text-4xl md:text-7xl leading-[60px] md:leading-[95px]'>TAKE AIM AT SUCCESS <br /> WITH OUR PRECISION</h1>
+          <div className='mt-10 p-6 md:px-12 '>
+            <h1 className='md:hover:font-medium duration-300 transition-all flex md:hidden font-light text-center text-[#17191b] text-4xl md:text-7xl leading-[60px] md:leading-[95px]'>TAKE AIM AT SUCCESS WITH OUR PRECISION</h1>
+            <h1 className='md:hover:font-medium duration-300 transition-all hidden md:flex font-light text-center text-[#17191b] text-4xl md:text-7xl leading-[60px] md:leading-[95px]'>TAKE AIM AT SUCCESS <br /> WITH OUR PRECISION</h1>
             <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.5 }} className='relative text-[#17191b] text-center w-full mt-3 md:mt-5 font-normal md:w-full lowercase text-3xl md:text-6xl leading-[45px] md:leading-[95px]'>DIGITAL SOLUTIONS</motion.div>
           </div>
         </motion.div>

@@ -9,7 +9,7 @@ const about = () => {
       <Header />
       <div className='h-screen mb-[-15rem] sm:mb-0 overflow-x-hidden w-screen relative p-0 flex flex-col justify-start gap-y-32 items-start'>
         <div className='pl-4 sm:pl-12 pt-20'>
-          <h1 className='text-5xl gap-y-6 flex flex-col sm:gap-y-0 sm:text-6xl font-light hover:font-light sm:hover:font-medium leading-[40px] sm:leading-[90px] transition-all duration-300'>
+          <h1 className='text-5xl md:hover:font-medium gap-y-6 flex flex-col sm:gap-y-0 sm:text-6xl font-light leading-[40px] sm:leading-[90px] transition-all duration-300'>
             <div className='flex gap-x-2 sm:gap-x-4 overflow-hidden'>
               <motion.div className='overflow-hidden' initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.1 }} ><h1 className='overflow-hidden'>WE</h1></motion.div>
               <motion.div className='overflow-hidden' initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.2 }} ><h1 className='overflow-hidden'>ARE</h1></motion.div>
