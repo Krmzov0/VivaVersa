@@ -15,7 +15,7 @@ export default async (req, res) => {
         });
 
         const mailData = {
-            from: 'vivaversagency@gmail.com',
+            from: email,
             to: 'vivaversagency@gmail.com',
             subject: 'VivaVersa - Web Form Submission',
             html: `<p>Name: ${fullName}</p><p>Email: ${email}</p><p>Goal: ${goal}</p><p>Project Details: ${details}</p>`,
