@@ -9,14 +9,14 @@ export default async (req, res) => {
         const transporter = nodemailer.createTransport({
             service: 'Gmail',
             auth: {
-                user: 'krmzovgorgi0@gmail.com',
-                pass: 'hlsi yxbd eqoi mlie', // Use the application-specific password
+                user: 'vivaversagency@gmail.com',
+                pass: 'a r l u f p k g u q b j j d u h', // Use the application-specific password
             },
         });
 
         const mailData = {
-            from: 'krmzovgorgi0@gmail.com',
-            to: 'krmzovgorgi0@gmail.com',
+            from: 'vivaversagency@gmail.com',
+            to: 'vivaversagency@gmail.com',
             subject: 'VivaVersa - Web Form Submission',
             html: `<p>Name: ${fullName}</p><p>Email: ${email}</p><p>Goal: ${goal}</p><p>Project Details: ${details}</p>`,
         };
