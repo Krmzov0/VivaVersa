@@ -62,7 +62,7 @@ const services = () => {
                         <div className="border-[#f1f2ee]">
                             <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}>
                                 <h1 className="text-2xl sm:text-[32px] text-[#f1f2ee] font-light hover:font-light sm:hover:font-medium transition-all duration-300 gap-x-4 uppercase flex items-center w-full">
-                                    <span className="text-[#878c8e]">02</span> Maßgeschneiderte Strategien
+                                    <span className="text-[#878c8e]">02</span> Maß Strategien
                                 </h1>
                             </motion.div>
                             <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}>
@@ -76,7 +76,7 @@ const services = () => {
                         <div className="border-[#f1f2ee]">
                             <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}>
                                 <h1 className="text-2xl sm:text-[32px] text-[#f1f2ee] font-light hover:font-light sm:hover:font-medium transition-all duration-300 gap-x-4 uppercase flex items-center w-full">
-                                    <span className="text-[#878c8e]">03</span> INHALTSENERSTELLUNG
+                                    <span className="text-[#878c8e]">03</span> INHALT TELLUNG
                                 </h1>
                             </motion.div>
                             <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}>
@@ -118,7 +118,7 @@ const services = () => {
                         <div className="border-[#f1f2ee]">
                             <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}>
                                 <h1 className="text-2xl sm:text-[32px] text-[#f1f2ee] font-light hover:font-light sm:hover:font-medium transition-all duration-300 gap-x-4 uppercase flex items-center w-full">
-                                    <span className="text-[#878c8e]">06</span> Datengetriebene Einblicke
+                                    <span className="text-[#878c8e]">06</span> Datenbasiert Einblicke
                                 </h1>
                             </motion.div>
                             <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}>
@@ -141,9 +141,9 @@ const services = () => {
 
                 <div className='w-full md:w-[65%] flex flex-col gap-y-10 md:mt-0 mt-20'>
                     <div className='pb-28 border-b border-[#17191b83] flex-col md:flex-row flex justify-start md:gap-y-0 gap-y-10 items-start'>
-                        <motion.div initial={{ opacity: 0, scale: 1.2 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.4 }} className='text-2xl md:w-[50%] md:text-4xl leading-[40px] md:leading-[60px] font-light text-[#17191b]'>SOZIALES MEDIEN <br /> MARKETING</motion.div>
+                        <motion.div initial={{ opacity: 0, scale: 1.1 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.4 }} className='text-2xl md:w-[50%] md:text-4xl leading-[40px] md:leading-[60px] font-light text-[#17191b]'>SOZIALES MEDIEN <br /> MARKETING</motion.div>
 
-                        <motion.div initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}>
+                        <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}>
                             <ul className='md:ml-28 text-[#17191b] flex flex-col gap-y-10 md:gap-y-14 text-md '>
                                 <li>&#8226; Organische Werbung;</li>
                                 <li>&#8226; Bezahlte Werbung;</li>
@@ -155,9 +155,9 @@ const services = () => {
                     </div>
 
                     <div className='pb-28 border-b border-[#17191b83] flex-col md:flex-row flex justify-start md:gap-y-0 gap-y-10 items-start'>
-                        <motion.div initial={{ opacity: 0, scale: 1.2 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.4 }} className='text-2xl md:w-[50%] md:text-4xl leading-[40px] md:leading-[60px] font-light text-[#17191b]'>WEBSEITE ENTWICKLUNG</motion.div>
+                        <motion.div initial={{ opacity: 0, scale: 1.1 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.4 }} className='text-2xl md:w-[50%] md:text-4xl leading-[40px] md:leading-[60px] font-light text-[#17191b]'>WEBSEITE ENTWICKLUNG</motion.div>
 
-                        <motion.div initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}>
+                        <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}>
                             <ul className='md:ml-28 text-[#17191b] flex flex-col gap-y-10 md:gap-y-14 text-md '>
                                 <li>&#8226; Front-End-Entwicklung;</li>
                                 <li>&#8226; Back-End-Entwicklung;</li>
@@ -171,9 +171,9 @@ const services = () => {
                     </div>
 
                     <div className='pb-28 border-b border-[#17191b83] flex-col md:flex-row flex justify-start md:gap-y-0 gap-y-10 items-start'>
-                        <motion.div initial={{ opacity: 0, scale: 1.2 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.4 }} className='text-2xl md:w-[50%] md:text-4xl leading-[40px] md:leading-[60px] font-light text-[#17191b]'>WEBSEITE QDESIGN</motion.div>
+                        <motion.div initial={{ opacity: 0, scale: 1.1 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.4 }} className='text-2xl md:w-[50%] md:text-4xl leading-[40px] md:leading-[60px] font-light text-[#17191b]'>WEBSEITE DESIGN</motion.div>
 
-                        <motion.div initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}>
+                        <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}>
                             <ul className='md:ml-28 text-[#17191b] flex flex-col gap-y-10 md:gap-y-14 text-md '>
                                 <li>&#8226; UI/UX-Design;</li>
                                 <li>&#8226; Branchenkonkurrenten-Recherche;</li>
