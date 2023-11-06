@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { useRouter } from 'next/router'
 import Headroom from 'react-headroom'
 
-const Header = () => {
+const HeaderDe = () => {
 
   const router = useRouter()
 
@@ -70,10 +70,10 @@ const Header = () => {
           />
 
           <div className='hidden md:flex md:absolute left-[50%] translate-x-[-50%] gap-x-12 items-center ml-16 md:ml-0'>
-            <h2 onClick={() => router.push("/")} className='unbounded hover:text-[#17191b] duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#878c8e] text-lg'>home</h2>
-            <h2 onClick={() => router.push("/about")} className='unbounded hover:text-[#17191b] duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#878c8e] text-lg'>about</h2>
-            <h2 onClick={() => router.push("/services")} className='unbounded hover:text-[#17191b] duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#878c8e] text-lg'>services</h2>
-            <h2 onClick={() => router.push("/contact")} className='unbounded hover:text-[#17191b] duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#878c8e] text-lg'>contact</h2>
+            <h2 onClick={() => router.push("/de/home")} className='unbounded hover:text-[#17191b] duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#878c8e] text-lg'>heim</h2>
+            <h2 onClick={() => router.push("/de/about")} className='unbounded hover:text-[#17191b] duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#878c8e] text-lg'>über uns</h2>
+            <h2 onClick={() => router.push("/de/services")} className='unbounded hover:text-[#17191b] duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#878c8e] text-lg'>dienste</h2>
+            <h2 onClick={() => router.push("/de/contact")} className='unbounded hover:text-[#17191b] duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#878c8e] text-lg'>kontakt</h2>
           </div>
 
           <div className='hidden md:block'>
@@ -90,11 +90,11 @@ const Header = () => {
               {langMenu && (<motion.div className='absolute w-44 right-0 bg-[#f1f2ee]' initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} >
                 <div className='absolute border border-[#878c8e47] bg-[#f1f2ee] overflow-hidden right-0 w-full left-0 mt-5 rounded-xl'>
                   <div onClick={() => router.push('/')} className='flex items-center gap-x-3 py-2 hover:bg-[#878c8e47] transition-all px-4'>
-                    <Image src='/en.png' alt='' priority='true' className='w-7' width={60} height={60} />English</div>
+                    <Image src='/en.png' alt='' priority='true' className='w-7' width={60} height={60} />Englisch</div>
                   <div className='w-full h-[1px] bg-[#878c8e47]'></div>
                   <div onClick={() => router.push('/de/home')} className='flex items-center gap-x-3 py-2 hover:bg-[#878c8e47] transition-all px-4'>
                     <Image src='/de.png' alt='' priority='true' className='w-7' width={60} height={60} />
-                    German</div>
+                    Deutsch</div>
                 </div>
               </motion.div>)}
             </div>
@@ -125,16 +125,16 @@ const Header = () => {
 
 
         <div className='mt-12 ml-1 gap-y-8 flex flex-col'>
-          {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.5 }}><h2 onClick={() => router.push("/")} className='unbounded hover:text-[#878c8e] uppercase duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#f1f2ee] text-4xl'>home</h2></motion.div>}
-          {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.65 }}><h2 onClick={() => router.push("/about")} className='unbounded hover:text-[#878c8e] uppercase duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#f1f2ee] text-4xl'>about</h2></motion.div>}
-          {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.75 }}><h2 onClick={() => router.push("/services")} className='unbounded hover:text-[#878c8e] uppercase duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#f1f2ee] text-4xl'>services</h2></motion.div>}
-          {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.85 }}><h2 onClick={() => router.push("/contact")} className='unbounded hover:text-[#878c8e] uppercase duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#f1f2ee] text-4xl'>contact</h2></motion.div>}
+          {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.5 }}><h2 onClick={() => router.push("/de/home")} className='unbounded hover:text-[#878c8e] uppercase duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#f1f2ee] text-4xl'>heim</h2></motion.div>}
+          {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.65 }}><h2 onClick={() => router.push("/de/about")} className='unbounded hover:text-[#878c8e] uppercase duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#f1f2ee] text-4xl'>über uns</h2></motion.div>}
+          {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.75 }}><h2 onClick={() => router.push("/de/services")} className='unbounded hover:text-[#878c8e] uppercase duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#f1f2ee] text-4xl'>dienste</h2></motion.div>}
+          {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.85 }}><h2 onClick={() => router.push("/de/contact")} className='unbounded hover:text-[#878c8e] uppercase duration-200 hover:font-medium transition-all cursor-pointer font-light text-[#f1f2ee] text-4xl'>kontakt</h2></motion.div>}
         </div>
 
         {menuToggle && <motion.div variants={navLinks} initial="initial" animate="animate" transition={{ delay: 0.95 }} className='block md:hidden mt-10 ml-1'>
           <div onClick={handleLangMenu} className=' select-none w-max relative border border-[#f1f2eeb8] bg-[#17191b] rounded-xl h-max cursor-pointer '>
             <div className='active:bg-[#f1f2ee71] transition-all flex justify-center w-full gap-x-12  items-center rounded-xl py-4 px-4'>
-              <h2 className='text-xl text-[#f1f2ee] font-light'>Language</h2>
+              <h2 className='text-xl text-[#f1f2ee] font-light'>Sprache</h2>
               {langMenu ? <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20 15.5831L13.4134 8.9964C13.0367 8.62509 12.529 8.41693 12 8.41693C11.471 8.41693 10.9633 8.62509 10.5866 8.9964L4 15.5831" stroke="#878c8e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg> : <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -145,10 +145,10 @@ const Header = () => {
             {langMenu && (<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} >
               <div className='absolute text-[#f1f2ee] border  border-[#f1f2eeb8] w-full overflow-hidden left-0 mt-5 rounded-xl'>
                 <div onClick={() => router.push('/')} className='flex items-center gap-x-3 py-4  text-xl font-light active:bg-[#f1f2ee71] transition-all pl-5'>
-                  <Image src='/en.png' alt='' priority='true' className='w-7' width={60} height={60} />English</div>
+                  <Image src='/en.png' alt='' priority='true' className='w-7' width={60} height={60} />Englisch</div>
                 <div className='w-full h-[1px] bg-[#878c8e47]'></div>
                 <div onClick={() => router.push('/de/home')} className='flex items-center gap-x-3 py-4 text-xl font-light active:bg-[#f1f2ee71] transition-all pl-5'>
-                  <Image src='/de.png' alt='' priority='true' className='w-7' width={60} height={60} />German</div>
+                  <Image src='/de.png' alt='' priority='true' className='w-7' width={60} height={60} />Deutsch</div>
               </div>
             </motion.div>)}
           </div>
@@ -159,7 +159,7 @@ const Header = () => {
   )
 }
 
-export default Header
+export default HeaderDe
 
 
 

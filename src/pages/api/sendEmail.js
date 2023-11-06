@@ -10,7 +10,7 @@ export default async (req, res) => {
             service: 'Gmail',
             auth: {
                 user: 'vivaversagency@gmail.com',
-                pass: 'a r l u f p k g u q b j j d u h', // Use the application-specific password
+                pass: process.env.APP_PASS, // Use the application-specific password
             },
         });
 
@@ -34,5 +34,4 @@ export default async (req, res) => {
 };
 
 
-//hlsi yxbd eqoi mlie
 

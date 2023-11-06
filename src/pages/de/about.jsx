@@ -1,65 +1,66 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import Header from '@/components/HeaderDe'
-import Footer from '@/components/FooterDe'
+import FooterDe from '@/components/FooterDe'
+import HeaderDe from '@/components/HeaderDe'
 
 const about = () => {
   return (
     <>
-      <Header />
+      <HeaderDe />
       <div className='h-screen mb-[-15rem] sm:mb-0 overflow-x-hidden w-screen relative p-0 flex flex-col justify-start gap-y-32 items-start'>
         <div className='pl-4 sm:pl-12 pt-20'>
-          <h1 className='text-5xl gap-y-6 flex flex-col sm:gap-y-0 sm:text-6xl font-light hover:font-light sm:hover:font-medium leading-[40px] sm:leading-[90px] transition-all duration-300'>
+          <h1 className='text-[2.5rem] gap-y-6 flex flex-col sm:gap-y-0 sm:text-6xl font-light hover:font-light sm:hover:font-medium leading-[40px] sm:leading-[90px] transition-all duration-300'>
             <div className='flex gap-x-2 sm:gap-x-4 overflow-hidden'>
-              <motion.div className='overflow-hidden' initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.1 }} ><h1 className='overflow-hidden'>WE De</h1></motion.div>
-              <motion.div className='overflow-hidden' initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.2 }} ><h1 className='overflow-hidden'>ARE</h1></motion.div>
-              <motion.div className='overflow-hidden hidden sm:flex' initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.3 }} ><h1 className='overflow-hidden'>VIVA</h1></motion.div>
-              <motion.div className='overflow-hidden hidden sm:flex' initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.4 }} ><h1 className='overflow-hidden'>VERSA</h1></motion.div>
+              <motion.div className='overflow-hidden' initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.1 }} ><h1 className='overflow-hidden'>WIR</h1></motion.div>
+              <motion.div className='overflow-hidden' initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.2 }} ><h1 className='overflow-hidden'>SIND</h1></motion.div>
+              <motion.div className='overflow-hidden' initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.3 }} ><h1 className='overflow-hidden'>DIE</h1></motion.div>
+              <motion.div className='overflow-hidden hidden sm:flex' initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.4 }} ><h1 className='overflow-hidden'>VIVA</h1></motion.div>
+              <motion.div className='overflow-hidden hidden sm:flex' initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.5 }} ><h1 className='overflow-hidden'>VERSA</h1></motion.div>
             </div>
 
             <div className='flex sm:hidden gap-x-2 overflow-hidden'>
-              <motion.div className='overflow-hidden' initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.3 }} ><h1 className='overflow-hidden'>VIVA</h1></motion.div>
-              <motion.div className='overflow-hidden' initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.4 }} ><h1 className='overflow-hidden'>VERSA</h1></motion.div>
+              <motion.div className='overflow-hidden' initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.4 }} ><h1 className='overflow-hidden'>VIVA</h1></motion.div>
+              <motion.div className='overflow-hidden' initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.5 }} ><h1 className='overflow-hidden'>VERSA</h1></motion.div>
             </div>
 
             <div className='overflow-hidden'>
-              <motion.div className='overflow-hidden' initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.5 }}><h1 className='overflow-hidden'>AGENCY</h1></motion.div>
+              <motion.div className='overflow-hidden' initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.6 }}><h1 className='overflow-hidden'>AGENTUR</h1></motion.div>
             </div>
           </h1>
 
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8 }}><p className='mt-10  text-md text-[#878c8e] font-light'>We provide tailored services for businesses to succeed in the digital landscape.</p></motion.div>
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8 }}><p className='mt-10  text-md text-[#878c8e] font-light'>Wir bieten maßgeschneiderte Dienstleistungen, damit Unternehmen im digitalen Umfeld erfolgreich sind.</p></motion.div>
         </div>
 
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.2, delay: 0.6 }} className='flex'>
           <div className='py-4 AboutSlider transition-all flex overflow-x-hidden sm:overflow-x-auto w-max sm:w-max items-center border-t border-b border-[#878c8e] gap-x-8'>
-            <h1 className='text-[25px] sm:text-[48px] font-light text-[#878c8e] w-max'>WE LOVE <span className='text-[#17191b]'>QUALITY</span></h1>
+            <h1 className='text-[25px] sm:text-[48px] font-light text-[#878c8e] w-max'>WIR LIEBEN <span className='text-[#17191b]'>QUALITÄT</span></h1>
             <div className='h-5 w-5 bg-[#17191b] flex justify-center items-center'>
               <div className='h-2.5 w-2.5 bg-[#f1f2ee]'></div>
             </div>
 
-            <h1 className='text-[25px] sm:text-[48px] font-light text-[#878c8e] w-max'>WE LOVE <span className='text-[#17191b]'>COLLABORATION</span></h1>
+            <h1 className='text-[25px] sm:text-[48px] font-light text-[#878c8e] w-max'>WIR LIEBEN <span className='text-[#17191b]'>ZUSAMMENARBEIT</span></h1>
             <div className='h-5 w-5 bg-[#17191b] flex justify-center items-center'>
               <div className='h-2.5 w-2.5 bg-[#f1f2ee]'></div>
             </div>
 
-            <h1 className='text-[25px] sm:text-[48px] font-light text-[#878c8e] w-max'>WE LOVE <span className='text-[#17191b]'>SIMPLICITY</span></h1>
+            <h1 className='text-[25px] sm:text-[48px] font-light text-[#878c8e] w-max'>WIR LIEBEN <span className='text-[#17191b]'>EINFACHHEIT</span></h1>
             <div className='h-5 w-5 bg-[#17191b] mr-8 flex justify-center items-center'>
               <div className='h-2.5 w-2.5 bg-[#f1f2ee]'></div>
             </div>
           </div>
 
           <div className='py-4 AboutSlider transition-all flex overflow-x-hidden sm:overflow-x-auto w-max sm:w-max items-center border-t border-b border-[#878c8e] gap-x-8'>
-            <h1 className='text-[25px] sm:text-[48px] font-light text-[#878c8e] w-max'>WE LOVE <span className='text-[#17191b]'>QUALITY</span></h1>
+            <h1 className='text-[25px] sm:text-[48px] font-light text-[#878c8e] w-max'>WIR LIEBEN <span className='text-[#17191b]'>QUALITÄT</span></h1>
             <div className='h-5 w-5 bg-[#17191b] flex justify-center items-center'>
               <div className='h-2.5 w-2.5 bg-[#f1f2ee]'></div>
             </div>
 
-            <h1 className='text-[25px] sm:text-[48px] font-light text-[#878c8e] w-max'>WE LOVE <span className='text-[#17191b]'>COLLABORATION</span></h1>
+            <h1 className='text-[25px] sm:text-[48px] font-light text-[#878c8e] w-max'>WIR LIEBEN <span className='text-[#17191b]'>ZUSAMMENARBEIT</span></h1>
             <div className='h-5 w-5 bg-[#17191b] flex justify-center items-center'>
               <div className='h-2.5 w-2.5 bg-[#f1f2ee]'></div>
             </div>
 
-            <h1 className='text-[25px] sm:text-[48px] font-light text-[#878c8e] w-max'>WE LOVE <span className='text-[#17191b]'>SIMPLICITY</span></h1>
+            <h1 className='text-[25px] sm:text-[48px] font-light text-[#878c8e] w-max'>WIR LIEBEN <span className='text-[#17191b]'>EINFACHHEIT</span></h1>
             <div className='h-5 w-5 bg-[#17191b] mr-8 flex justify-center items-center'>
               <div className='h-2.5 w-2.5 bg-[#f1f2ee]'></div>
             </div>
@@ -70,41 +71,46 @@ const about = () => {
 
       <div className='h-max relative mt-28 w-screen p-6 py-14 sm:p-14 sm:py-44 flex flex-col bg-[#17191b]'>
         <div className='overflow-hidden'>
-          <motion.div className='overflow-hidden' initial={{ y: "100%" }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7 }}><h1 className=" overflow-hidden text-[32px] sm:text-5xl font-light text-[#f1f2ee]">ABOUT</h1></motion.div>
+          <motion.div className='overflow-hidden' initial={{ y: "100%" }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7 }}><h1 className=" overflow-hidden text-[32px] sm:text-5xl font-light text-[#f1f2ee] uppercase">über uns</h1></motion.div>
         </div>
 
         <div className=" text-[16px] hidden mt-20 sm:flex  sm:text-[#f1f2ee] gap-y-10 text-[#878c8e] sm:text-4xl font-light flex-col">
           <div className="overflow-hidden">
-            <motion.div initial={{ y: "100%" }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.1 }}><h1 className="overflow-hidden">VIVAVERSA, A DIGITAL DESIGN AGENCY WITH GLOBAL CLIENTS</h1></motion.div>
+            <motion.div initial={{ y: "100%" }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.1 }}><h1 className="overflow-hidden">VIVAVERSA, EINE DIGITALE DESIGNAGENTUR FÜR WELTKUNDEN</h1></motion.div>
           </div>
           <div className="overflow-hidden">
-            <motion.div initial={{ y: "100%" }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.1 }}><h1 className="overflow-hidden">WORLDWIDE, KNOWS THAT PRODUCT DESIGN ISN&apos;T JUST ABOUT</h1></motion.div>
+            <motion.div initial={{ y: "100%" }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.1 }}><h1 className="overflow-hidden">WELTWEIT, WEIß, DASS PRODUKTDESIGN NICHT NUR DARUM</h1></motion.div>
           </div>
           <div className="overflow-hidden">
-            <motion.div initial={{ y: "100%" }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.1 }}><h1 className="overflow-hidden">AESTETHICS - IT&apos;S ABOUT CRAFTING SOLUTIONS THAT GIVE YOU A</h1></motion.div>
+            <motion.div initial={{ y: "100%" }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.1 }}><h1 className="overflow-hidden">GEHT ÄSTHETIK – ES GEHT DARUM, LÖSUNGEN ZU ENTWICKELN, </h1></motion.div>
+          </div>
+
+          <div className="overflow-hidden">
+            <motion.div initial={{ y: "100%" }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.1 }}><h1 className="overflow-hidden">DIE DIR EIN KONKURRENZVORTEIL DURCH VERBESSERUNG</h1></motion.div>
+          </div>
+          
+          <div className="overflow-hidden">
+            <motion.div initial={{ y: "100%" }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.1 }}><h1 className="overflow-hidden">DER KONVERSIONSRATEN, BENUTZER ENGAGEMENT</h1></motion.div>
           </div>
           <div className="overflow-hidden">
-            <motion.div initial={{ y: "100%" }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.1 }}><h1 className="overflow-hidden">COMPETITIVE EDGE BY ENHANCING CONVERSION RATES, USER</h1></motion.div>
-          </div>
-          <div className="overflow-hidden">
-            <motion.div initial={{ y: "100%" }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.1 }}><h1 className="overflow-hidden">ENGAGEMENT, AND BRAND PERCEPTION.</h1></motion.div>
+            <motion.div initial={{ y: "100%" }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.1 }}><h1 className="overflow-hidden">UND MARKENWAHRNEHMUNG.</h1></motion.div>
           </div>
         </div>
 
-        <motion.div initial={{ y: 40 }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7 }} className='mt-10 flex sm:hidden'><h1 className=" text-[#878c8e] text-[17px] overflow-hidden uppercase leading-[34px]">VIVAVERSA, A DIGITAL DESIGN AGENCY WITH GLOBAL CLIENTS WORLDWIDE, KNOWS THAT PRODUCT DESIGN ISN&apos;T JUST ABOUT AESTETHICS.</h1></motion.div> <br />
+        <motion.div initial={{ y: 40 }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7 }} className='mt-10 flex sm:hidden'><h1 className=" text-[#878c8e] text-[17px] overflow-hidden uppercase leading-[34px]">VIVAVERSA, EINE DIGITALE DESIGNAGENTUR FÜR WELTKUNDEN WELTWEIT, WEIß, DASS PRODUKTDESIGN NICHT NUR DARUM GEHT ÄSTHETIK.</h1></motion.div> <br />
 
         <div className='flex mt-10 flex-col sm:hidden justify-end gap-y-10'>
           <div className='overflow-hidden'>
             <motion.div className='overflow-hidden' initial={{ y: "100%" }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7 }}><h1 className=" text-right overflow-hidden text-[32px] sm:text-5xl font-light text-[#f1f2ee]">VISION</h1></motion.div>
           </div>
-          <motion.div initial={{ y: 40 }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7 }} className='flex sm:hidden'><h1 className=" text-[#878c8e] text-[17px] text-right overflow-hidden uppercase leading-[34px]"> IT&apos;S ABOUT CRAFTING SOLUTIONS THAT GIVE YOU A COMPETITIVE EDGE BY ENHANCING CONVERSION RATES, USER ENGAGEMENT, AND BRAND PERCEPTION.</h1></motion.div>
+          <motion.div initial={{ y: 40 }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7 }} className='flex sm:hidden'><h1 className=" text-[#878c8e] text-[17px] text-right overflow-hidden uppercase leading-[34px]"> ES GEHT DARUM, LÖSUNGEN ZU ENTWICKELN, DIE DIR EIN KONKURRENZVORTEIL DURCH VERBESSERUNG DER KONVERSIONSRATEN, BENUTZER ENGAGEMENT UND MARKENWAHRNEHMUNG.</h1></motion.div>
         </div>
       </div>
 
 
       <div className='h-max relative w-screen mt-28 px-6 pb-28 pt-0 flex flex-col sm:flex-row justify-between items-start gap-y-4 sm:px-12 bg-[#f1f2ee]'>
 
-        <motion.div className='sm:sticky sm:top-10 mb-10 sm:mb-0' initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }}><h1 className='text-[28px] sm:text-[38px] font-light ml-1 leading-[50px] sm:leading-[60px]'>VALUES FROM <br /> OUR EXPERIENCE</h1></motion.div>
+        <motion.div className='sm:sticky sm:top-10 mb-10 sm:mb-0' initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }}><h1 className='text-[28px] sm:text-[38px] font-light ml-1 leading-[50px] sm:leading-[60px]'>WERTE AUS <br /> UNSERER ERFAHRUNG </h1></motion.div>
 
         <div className='flex flex-col sm:px-0 w-full sm:w-[50%] gap-y-2 sm:gap-y-8'>
           <div className='flex w-full sm:max-w-full flex-col py-8 pt-0 gap-y-7'>
@@ -125,8 +131,8 @@ const about = () => {
               </div>
             </motion.div>
 
-            <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0, delay: 0.3 }} ><h1 className='text-[25px] sm:text-[32px] font-light uppercase ml-1'>Thinking outside the box</h1></motion.div>
-            <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0, delay: 0.4 }} ><p className='text-lg w-fit text-[#878c8e] font-light mt-0 sm:mt-4 ml-1'>We foster creativity and unconventional thinking, delivering unique strategies that set your brand apart and drive exceptional outcomes.</p></motion.div>
+            <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0, delay: 0.3 }} ><h1 className='text-[25px] sm:text-[32px] font-light uppercase ml-1'>Über den Tellerrand hinaus denken</h1></motion.div>
+            <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0, delay: 0.4 }} ><p className='text-lg w-fit text-[#878c8e] font-light mt-0 sm:mt-4 ml-1'>Wir fördern Kreativität und unkonventionelles Denken, liefern einzigartige Strategien, die deine Marke hervorheben und außergewöhnliche Ergebnisse erzielen.</p></motion.div>
           </div>
 
           <div className='flex w-full sm:max-w-full flex-col py-8 gap-y-7'>
@@ -141,8 +147,8 @@ const about = () => {
                 <div className='h-10 sm:h-12 w-full bg-[#f1f2ee] absolute bottom-0'></div>
               </div>
             </motion.div>
-            <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0, delay: 0.3 }} ><h1 className='text-[25px] sm:text-[32px] font-light uppercase ml-1'>Innovation and Adaptability</h1></motion.div>
-            <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0, delay: 0.4 }} ><p className='text-lg w-fit text-[#878c8e] font-light mt-0 sm:mt-4 ml-1'>We thrive on innovation and adapt to the ever-evolving digital landscape, ensuring your strategies remain fresh and effective.</p></motion.div>
+            <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0, delay: 0.3 }} ><h1 className='text-[25px] sm:text-[32px] font-light uppercase ml-1'>Innovation und Anpassungsfähigkeit</h1></motion.div>
+            <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0, delay: 0.4 }} ><p className='text-lg w-fit text-[#878c8e] font-light mt-0 sm:mt-4 ml-1'>Wir blühen in der Innovation auf und passen uns der ständig wandelnden digitalen Landschaft an, um sicherzustellen, dass deine Strategien frisch und effektiv bleiben.</p></motion.div>
           </div>
 
           <div className='flex w-full sm:max-w-full flex-col py-8 gap-y-7'>
@@ -158,8 +164,8 @@ const about = () => {
                 </div>
               </div>
             </motion.div>
-            <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0, delay: 0.3 }} ><h1 className='text-[25px] sm:text-[32px] font-light uppercase ml-1'>Client-Centric Approach</h1></motion.div>
-            <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0, delay: 0.4 }} ><p className='text-lg w-fit text-[#878c8e] font-light mt-0 sm:mt-4 ml-1'>Your success is our top priority. We focus on understanding your unique needs and delivering tailored solutions.</p></motion.div>
+            <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0, delay: 0.3 }} ><h1 className='text-[25px] sm:text-[32px] font-light uppercase ml-1'>Kundenorientierter Ansatz</h1></motion.div>
+            <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0, delay: 0.4 }} ><p className='text-lg w-fit text-[#878c8e] font-light mt-0 sm:mt-4 ml-1'>Ihr Erfolg steht an erster Stelle. Wir konzentrieren uns darauf, Ihre individuellen Bedürfnisse zu verstehen und maßgeschneiderte Lösungen zu liefern.</p></motion.div>
           </div>
 
           <div className='flex w-full sm:max-w-full flex-col py-8 gap-y-7'>
@@ -175,14 +181,14 @@ const about = () => {
                 </div>
               </div>
             </motion.div>
-            <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0, delay: 0.3 }} ><h1 className='text-[25px] sm:text-[32px] font-light uppercase ml-1'>Collaborative Partnerships</h1></motion.div>
-            <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0, delay: 0.4 }} ><p className='text-lg w-fit text-[#878c8e] font-light mt-0 sm:mt-4 ml-1'>We view our clients as partners, fostering collaboration and open communication to achieve shared goals.</p></motion.div>
+            <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0, delay: 0.3 }} ><h1 className='text-[25px] sm:text-[32px] font-light uppercase ml-1'>Kooperative Partnerschaften</h1></motion.div>
+            <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0, delay: 0.4 }} ><p className='text-lg w-fit text-[#878c8e] font-light mt-0 sm:mt-4 ml-1'>Wir betrachten unsere Kunden als Partner, fördern die Zusammenarbeit und offene Kommunikation, um gemeinsame Ziele zu erreichen.</p></motion.div>
           </div>
         </div>
 
       </div>
 
-      <Footer />
+      <FooterDe />
     </>
   )
 }
