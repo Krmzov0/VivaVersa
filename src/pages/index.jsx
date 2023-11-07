@@ -226,7 +226,7 @@ export default function Home() {
             <div className="p-24  border-0 flex justify-center items-center">
               <motion.div className="stackImg absolute w-24 sm:w-32" initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
                 <MagneticHover>
-                  <Image alt="" className="stackImg absolute w-24 sm:w-32" src="/premiere.svg" width={30} height={30} />
+                  <Image alt="" className="stackImg absolute w-24 sm:w-32" src="/ae.svg" width={30} height={30} />
                 </MagneticHover>
               </motion.div>
             </div>
