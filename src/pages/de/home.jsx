@@ -78,7 +78,7 @@ export default function Home() {
               <h1 className="text-[32px] sm:text-[38px] font-light text-right sm:text-left">LERNE UNS <br />BESSER KENNEN</h1>
             </motion.div>
 
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}  ><div onClick={() => router.push('/about')} className="flex aboutLink cursor-pointer relative items-center gap-x-4">
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}  ><div onClick={() => router.push('/de/about')} className="flex aboutLink cursor-pointer relative items-center gap-x-4">
               <h2 className=" text-xl text-[#17191b] uppercase font-light relative">über uns</h2>
               <div className=" transition-all flex justify-end w-14 h-14 relative">
                 <div className=" transition-all blackcube w-[50%] h-full bg-[#17191b]"></div>
@@ -130,7 +130,7 @@ export default function Home() {
                 <h1 className="text-[32px] sm:text-[38px] font-light text-[#f1f2ee] text-right sm:text-left">DIENSTE <br /> UNSERE STÄRKEN</h1>
               </div></motion.div>
 
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}  ><div onClick={() => router.push('/services')} className="flex servicesLink cursor-pointer relative items-center gap-x-4">
+              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}  ><div onClick={() => router.push('/de/services')} className="flex servicesLink cursor-pointer relative items-center gap-x-4">
                 <h2 className=" text-xl text-[#f1f2ee] font-light relative">DIENSTE</h2>
                 <div className=" transition-all flex justify-end w-14 h-14 relative">
                   <div className=" transition-all whiteCube w-[50%] h-full bg-[#f1f2ee]"></div>
