@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useState } from "react";
 import MagneticHover from "@/components/MagneticHover";
 import AnimatedH1De from "@/components/AnimatedHeaderDe";
 import FooterDe from "../../components/FooterDe";
@@ -10,6 +10,17 @@ import HeaderDe from "../../components/HeaderDe";
 export default function Home() {
 
   const router = useRouter();
+
+  const [videoPlay, setvideoPlay] = useState(false)
+  const [unmuteVideo, setunmuteVideo] = useState(false)
+
+  const handleUnmuteVideo = () => {
+    setunmuteVideo(true)
+  }
+
+  const handleVideoPlay = () => {
+    videoPlay ? setvideoPlay(false) : setvideoPlay(true)
+  }
 
   return (
     <>
@@ -51,16 +62,27 @@ export default function Home() {
 
         <div className="sm:p-12 sm:pt-0 w-screen h-full flex ">
           <div className="mt-16 flex justify-center relative items-center w-full h-[30vh] sm:h-[100vh] bg-[#17191b]">
-            <MagneticHover >
-            <div className="hidden right-10 top-10 bg-[#f1f2ee] opacity-75 cursor-pointer rounded-full w-20 h-20 justify-center items-center">
+
+            {videoPlay ? <motion.div transition={{ type: "spring", stiffness: 200 }} initial={{ scale: 1 }} whileHover={{scale: 1.15}} whileTap={{y: 2.5}} className=" absolute top-10 right-10">
+              <div onClick={handleVideoPlay} className={unmuteVideo ? "flex bg-[#f1f2ee] opacity-75 cursor-pointer rounded-full w-20 h-20 justify-center items-center" : "hidden"}>
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.5 4.5H5.5C4.94772 4.5 4.5 4.94772 4.5 5.5V18.5C4.5 19.0523 4.94772 19.5 5.5 19.5H8.5C9.05229 19.5 9.5 19.0523 9.5 18.5V5.5C9.5 4.94772 9.05229 4.5 8.5 4.5Z" stroke="#17191b" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                  <path d="M18.5 4.5H15.5C14.9477 4.5 14.5 4.94772 14.5 5.5V18.5C14.5 19.0523 14.9477 19.5 15.5 19.5H18.5C19.0523 19.5 19.5 19.0523 19.5 18.5V5.5C19.5 4.94772 19.0523 4.5 18.5 4.5Z" stroke="#17191b" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M5.64386 5.02467V18.9711C5.64455 19.257 5.72521 19.5371 5.87674 19.7796C6.02827 20.0221 6.24461 20.2173 6.50132 20.3433C6.75802 20.4693 7.04484 20.5209 7.32935 20.4924C7.61387 20.4638 7.88473 20.3563 8.11131 20.1818L17.7665 12.6722C17.9577 12.523 18.1108 12.3305 18.2131 12.1106C18.3154 11.8907 18.3641 11.6497 18.3551 11.4073C18.3461 11.165 18.2798 10.9282 18.1615 10.7165C18.0432 10.5047 17.8763 10.3241 17.6746 10.1894L8.01935 3.75264C7.78885 3.60084 7.52164 3.5141 7.24593 3.50158C6.97022 3.48906 6.69625 3.55122 6.45294 3.68151C6.20964 3.8118 6.00603 4.00537 5.86362 4.24178C5.72121 4.4782 5.64528 4.74868 5.64386 5.02467Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
+
               </div>
-            </MagneticHover>
+            </motion.div> : 
+              <motion.div transition={{ type: "spring", stiffness: 200 }} initial={{ scale: 1 }} whileHover={{scale: 1.15}} whileTap={{y: 2.5}} className=" absolute top-10 right-10">
+                <div onClick={handleVideoPlay} className={unmuteVideo ? "flex bg-[#f1f2ee] opacity-75 cursor-pointer rounded-full w-20 h-20 justify-center items-center" : "hidden"}>
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 4.5H5.5C4.94772 4.5 4.5 4.94772 4.5 5.5V18.5C4.5 19.0523 4.94772 19.5 5.5 19.5H8.5C9.05229 19.5 9.5 19.0523 9.5 18.5V5.5C9.5 4.94772 9.05229 4.5 8.5 4.5Z" stroke="#17191b" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M18.5 4.5H15.5C14.9477 4.5 14.5 4.94772 14.5 5.5V18.5C14.5 19.0523 14.9477 19.5 15.5 19.5H18.5C19.0523 19.5 19.5 19.0523 19.5 18.5V5.5C19.5 4.94772 19.0523 4.5 18.5 4.5Z" stroke="#17191b" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </div>
+              </motion.div>
+            }
+
             <MagneticHover>
-              <div className="hover:scale-[1.1] transition-all bg-[#f1f2ee] opacity-75 cursor-pointer rounded-full w-24 h-24 sm:w-28 sm:h-28 flex justify-center items-center">
+              <div onClick={handleUnmuteVideo} className={unmuteVideo ? "hidden" : "hover:scale-[1.1] transition-all bg-[#f1f2ee] opacity-75 cursor-pointer rounded-full w-24 h-24 sm:w-28 sm:h-28 flex justify-center items-center"}>
                 <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M3 14.0881V9.91184C3 9.49649 3.14223 9.09814 3.39541 8.80445C3.64858 8.51075 3.99197 8.34575 4.35002 8.34575H6.24005C6.47678 8.34461 6.70927 8.2727 6.91506 8.13694L10.8842 5.5059C11.0892 5.37099 11.3211 5.30072 11.5569 5.30208C11.7926 5.30343 12.0239 5.37638 12.2278 5.51364C12.4317 5.65091 12.601 5.84771 12.719 6.08448C12.837 6.32125 12.8994 6.58972 12.9002 6.86318V17.1368C12.8994 17.4102 12.837 17.6787 12.719 17.9154C12.601 18.1522 12.4317 18.3491 12.2278 18.4863C12.0239 18.6235 11.7926 18.6965 11.5569 18.6979C11.3211 18.6992 11.0892 18.629 10.8842 18.494L6.91506 15.863C6.70927 15.7272 6.47678 15.6553 6.24005 15.6542H4.35002C3.99197 15.6542 3.64858 15.4891 3.39541 15.1955C3.14223 14.9018 3 14.5035 3 14.0881Z" stroke="#17191b" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M16.2278 15.7145C17.2301 14.7122 17.7933 13.3528 17.7932 11.9353C17.7933 10.5178 17.2301 9.15836 16.2278 8.15601" stroke="#17191b" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" />
@@ -167,60 +189,60 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="h-max w-screen flex flex-col sm:flex-row pt-20 sm:pt-20 justify-between bg-[#f1f2ee] items-start px-0 sm:px-12 p-8 sm:p-12 pb-16 sm:pb-44 sm:pr-16">
+        <div className="h-max w-screen flex flex-col lg:flex-row pt-20 lg:pt-20 justify-between bg-[#f1f2ee] items-start px-0 lg:px-12 p-8 lg:p-12 pb-16 lg:pb-44 lg:pr-16">
 
-          <motion.div className="sm:px-0 relative sm:sticky sm:top-10" initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.1 }} >
-            <div className=" px-8 sm:px-0 relative sm:sticky sm:top-10">
-              <h1 className=" text-[16px] sm:text-[24px] font-light text-[#878c8e]">TECHNOLOGIE STAPEL</h1>
-              <h1 className=" text-[30px] sm:text-[38px] font-light text-[#17191b] mt-1">VON UNS VERWENDET <br /> TECHNOLOGIEN</h1>
+          <motion.div className="lg:px-0 relative lg:sticky lg:top-10" initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.1 }} >
+            <div className=" px-8 lg:px-0 relative lg:sticky lg:top-10">
+              <h1 className=" text-[16px] lg:text-[24px] font-light text-[#878c8e]">TECHNOLOGIE STAPEL</h1>
+              <h1 className=" text-[30px] lg:text-[38px] font-light text-[#17191b] mt-1">VON UNS VERWENDET <br /> TECHNOLOGIEN</h1>
             </div>
           </motion.div>
 
-          <div className="grid mt-10 sm:mt-0 grid-cols-2 grid-rows-2 w-full sm:w-[60%]">
+          <div className="grid mt-10 lg:mt-0 grid-cols-2 grid-rows-2 w-full lg:w-[60%]">
             <div className="p-24 border border-t-0 border-b-0 border-[#17191b] border-l-0 flex justify-center items-center">
-              <motion.div className="stackImg absolute w-24 sm:w-32" transition={{ duration: 0.4 }} initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
+              <motion.div className="stackImg absolute w-24 lg:w-32" transition={{ duration: 0.4 }} initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
                 <MagneticHover>
-                  <Image alt="" className="stackImg absolute w-24 sm:w-32" src="/next.svg" width={30} height={30} />
+                  <Image alt="" className="stackImg w-24 lg:w-32" src="/next.svg" width={30} height={30} />
                 </MagneticHover>
               </motion.div>
             </div>
 
             <div className="p-24 border-[#17191b] flex justify-center items-center">
-              <motion.div className="stackImg absolute w-24 sm:w-32" transition={{ duration: 0.4 }} initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
+              <motion.div className="stackImg absolute w-24 lg:w-32" transition={{ duration: 0.4 }} initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
                 <MagneticHover>
-                  <Image alt="" className="stackImg absolute w-24 sm:w-32" src="/framer.svg" width={30} height={30} />
+                  <Image alt="" className="stackImg w-24 lg:w-32" src="/framer.svg" width={30} height={30} />
                 </MagneticHover>
               </motion.div>
             </div>
 
             <div className="p-24 border border-t-1 border-[#17191b] border-l-0  flex  justify-center items-center">
-              <motion.div className="stackImg absolute w-24 sm:w-32" transition={{ duration: 0.4 }} initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
+              <motion.div className="stackImg absolute w-24 lg:w-32" transition={{ duration: 0.4 }} initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
                 <MagneticHover>
-                  <Image alt="" className="stackImg absolute w-24 sm:w-32" src="/ps.svg" width={30} height={30} />
+                  <Image alt="" className="stackImg w-24 lg:w-32" src="/ps.svg" width={30} height={30} />
                 </MagneticHover>
               </motion.div>
             </div>
 
             <div className="p-24 border border-[#17191b] border-r-0 border-l-0  flex justify-center items-center">
-              <motion.div className="stackImg absolute w-24 sm:w-32" initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
+              <motion.div className="stackImg absolute w-24 lg:w-32" initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
                 <MagneticHover>
-                  <Image alt="" className="stackImg absolute w-24 sm:w-32" src="/il.svg" width={30} height={30} />
+                  <Image alt="" className="stackImg w-24 lg:w-32" src="/il.svg" width={30} height={30} />
                 </MagneticHover>
               </motion.div>
             </div>
 
             <div className="p-24  border border-t-0 border-b-0 border-[#17191b] border-l-0  flex justify-center items-center">
-              <motion.div className="stackImg absolute w-24 sm:w-32" initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
+              <motion.div className="stackImg absolute w-24 lg:w-32" initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
                 <MagneticHover>
-                  <Image alt="" className="stackImg absolute w-24 sm:w-32" src="/meta.svg" width={30} height={30} />
+                  <Image alt="" className="stackImg w-24 lg:w-32" src="/meta.svg" width={30} height={30} />
                 </MagneticHover>
               </motion.div>
             </div>
 
             <div className="p-24  border-0 flex justify-center items-center">
-              <motion.div className="stackImg absolute w-24 sm:w-32" initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
+              <motion.div className="stackImg absolute w-24 lg:w-32" initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
                 <MagneticHover>
-                  <Image alt="" className="stackImg absolute w-24 sm:w-32" src="/ae.svg" width={30} height={30} />
+                  <Image alt="" className="stackImg w-24 lg:w-32" src="/ae.svg" width={30} height={30} />
                 </MagneticHover>
               </motion.div>
             </div>

@@ -51,7 +51,7 @@ export default function Home() {
 
         <div className="sm:p-12 sm:pt-0 w-screen h-full flex ">
           <div className="mt-16 flex justify-center relative items-center w-full h-[30vh] sm:h-[100vh] bg-[#17191b]">
-            <MagneticHover >
+            <MagneticHover>
             <div className="hidden right-10 top-10 bg-[#f1f2ee] opacity-75 cursor-pointer rounded-full w-20 h-20 justify-center items-center">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8.5 4.5H5.5C4.94772 4.5 4.5 4.94772 4.5 5.5V18.5C4.5 19.0523 4.94772 19.5 5.5 19.5H8.5C9.05229 19.5 9.5 19.0523 9.5 18.5V5.5C9.5 4.94772 9.05229 4.5 8.5 4.5Z" stroke="#17191b" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -173,60 +173,60 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="h-max w-screen flex flex-col sm:flex-row pt-20 sm:pt-20 justify-between bg-[#f1f2ee] items-start px-0 sm:px-12 p-8 sm:p-12 pb-16 sm:pb-44 sm:pr-16">
+        <div className="h-max w-screen flex flex-col lg:flex-row pt-20 lg:pt-20 justify-between bg-[#f1f2ee] items-start px-0 lg:px-12 p-8 lg:p-12 pb-16 lg:pb-44 lg:pr-16">
 
-          <motion.div className="sm:px-0 relative sm:sticky sm:top-10" initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.1 }} >
-            <div className=" px-8 sm:px-0 relative sm:sticky sm:top-10">
-              <h1 className=" text-[16px] sm:text-[24px] font-light text-[#878c8e]">TECH STACK</h1>
-              <h1 className=" text-[30px] sm:text-[38px] font-light text-[#17191b] mt-1">TECHNOLOGIES <br /> WE USE</h1>
+          <motion.div className="lg:px-0 relative lg:sticky lg:top-10" initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.1 }} >
+            <div className=" px-8 lg:px-0 relative lg:sticky lg:top-10">
+              <h1 className=" text-[16px] lg:text-[24px] font-light text-[#878c8e]">TECH STACK</h1>
+              <h1 className=" text-[30px] lg:text-[38px] font-light text-[#17191b] mt-1">TECHNOLOGIES <br /> WE USE</h1>
             </div>
           </motion.div>
 
-          <div className="grid mt-10 sm:mt-0 grid-cols-2 grid-rows-2 w-full sm:w-[60%]">
+          <div className="grid mt-10 lg:mt-0 grid-cols-2 grid-rows-2 w-full lg:w-[60%]">
             <div className="p-24 border border-t-0 border-b-0 border-[#17191b] border-l-0 flex justify-center items-center">
-              <motion.div className="stackImg absolute w-24 sm:w-32" transition={{ duration: 0.4 }} initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
+              <motion.div className="stackImg absolute w-24 lg:w-32" transition={{ duration: 0.4 }} initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
                 <MagneticHover>
-                  <Image alt="" className="stackImg absolute w-24 sm:w-32" src="/next.svg" width={30} height={30} />
+                  <Image alt="" className="stackImg  w-24 lg:w-32" src="/next.svg" width={30} height={30} />
                 </MagneticHover>
               </motion.div>
             </div>
 
             <div className="p-24 border-[#17191b] flex justify-center items-center">
-              <motion.div className="stackImg absolute w-24 sm:w-32" transition={{ duration: 0.4 }} initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
+              <motion.div className="stackImg absolute w-24 lg:w-32" transition={{ duration: 0.4 }} initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
                 <MagneticHover>
-                  <Image alt="" className="stackImg absolute w-24 sm:w-32" src="/framer.svg" width={30} height={30} />
+                  <Image alt="" className="stackImg  w-24 lg:w-32" src="/framer.svg" width={30} height={30} />
                 </MagneticHover>
               </motion.div>
             </div>
 
             <div className="p-24 border border-t-1 border-[#17191b] border-l-0  flex  justify-center items-center">
-              <motion.div className="stackImg absolute w-24 sm:w-32" transition={{ duration: 0.4 }} initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
+              <motion.div className="stackImg absolute w-24 lg:w-32" transition={{ duration: 0.4 }} initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
                 <MagneticHover>
-                  <Image alt="" className="stackImg absolute w-24 sm:w-32" src="/ps.svg" width={30} height={30} />
+                  <Image alt="" className="stackImg w-24 lg:w-32" src="/ps.svg" width={30} height={30} />
                 </MagneticHover>
               </motion.div>
             </div>
 
             <div className="p-24 border border-[#17191b] border-r-0 border-l-0  flex justify-center items-center">
-              <motion.div className="stackImg absolute w-24 sm:w-32" initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
+              <motion.div className="stackImg absolute w-24 lg:w-32" initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
                 <MagneticHover>
-                  <Image alt="" className="stackImg absolute w-24 sm:w-32" src="/il.svg" width={30} height={30} />
+                  <Image alt="" className="stackImg  w-24 lg:w-32" src="/il.svg" width={30} height={30} />
                 </MagneticHover>
               </motion.div>
             </div>
 
             <div className="p-24  border border-t-0 border-b-0 border-[#17191b] border-l-0  flex justify-center items-center">
-              <motion.div className="stackImg absolute w-24 sm:w-32" initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
+              <motion.div className="stackImg absolute w-24 lg:w-32" initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
                 <MagneticHover>
-                  <Image alt="" className="stackImg absolute w-24 sm:w-32" src="/meta.svg" width={30} height={30} />
+                  <Image alt="" className="stackImg  w-24 lg:w-32" src="/meta.svg" width={30} height={30} />
                 </MagneticHover>
               </motion.div>
             </div>
 
             <div className="p-24  border-0 flex justify-center items-center">
-              <motion.div className="stackImg absolute w-24 sm:w-32" initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
+              <motion.div className="stackImg absolute w-24 lg:w-32" initial={{ opacity: 0, scale: 1.4 }} whileInView={{ opacity: 1, scale: 1 }}>
                 <MagneticHover>
-                  <Image alt="" className="stackImg absolute w-24 sm:w-32" src="/ae.svg" width={30} height={30} />
+                  <Image alt="" className="stackImg  w-24 lg:w-32" src="/ae.svg" width={30} height={30} />
                 </MagneticHover>
               </motion.div>
             </div>

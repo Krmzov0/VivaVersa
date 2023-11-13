@@ -22,28 +22,28 @@ const FooterDe = () => {
             </div>
 
             <div className='flex items-start sm:items-center flex-col sm:flex-row gap-y-4 sm:gap-y-0 gap-x-0 sm:gap-x-4 mt-16 sm:mt-24'>
-                <h1 className='unbounded relative footerButtons text-[16px] sm:text-[16px] text-[#f1f2ee]'>KONTAKTIERE UNS</h1>
-                <span className='unbounded text-[#878c8e] '>or</span>
-                <h1 className='unbounded relative footerButtons text-[16px] sm:text-[16px] text-[#f1f2ee]'>VEREINBARE EIN GESPRÄCH</h1>
+                <h1 onClick={() => router.push('/de/contact')} className='hover:text-[#878c8e] transition-all duration-200 unbounded cursor-pointer relative footerButtons text-[16px] sm:text-[16px] text-[#f1f2ee]'>KONTAKTIERE UNS</h1>
+                <span className='unbounded text-[#878c8e] '>oder</span>
+                <h1 className='hover:text-[#878c8e] transition-all duration-200 unbounded cursor-pointer relative footerButtons text-[16px] sm:text-[16px] text-[#f1f2ee]'>VEREINBARE EIN GESPRÄCH</h1>
             </div>
 
             <div className='mt-10 sm:mt-14 w-full sm:w-[70%] h-[1px] bg-[#878c8e3a]'></div>
 
             <div className='flex mt-10 sm:mt-14 justify-start flex-col sm:flex-row items-start gap-x-0 gap-y-[30px] sm:gap-y-0 sm:gap-x-[30px]'>
                 <div className='flex flex-col gap-x-[20px] gap-y-[20px]'>
-                    <motion.div initial={{ x: -20, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }}><h4 className='unbounded text-[16px] sm:text-[14px] text-[#878c8e]'>ALLGEMEIN</h4></motion.div>
+                    <motion.div initial={{ x: -20, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }}><h4 className='unbounded text-[16px] sm:text-[14px] text-[#878c8e]'>Allgemein</h4></motion.div>
                     <motion.div initial={{ x: -20, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ delay: 0.2 }} ><h4 className='unbounded  text-lg sm:text-[15px] font-light text-[#f1f2ee]'>vivaversagency@gmail.com</h4></motion.div>
                 </div>
 
                 <div className='flex flex-col gap-x-[20px] gap-y-[20px]'>
-                    <motion.div initial={{ x: -20, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} ><h4 className='unbounded text-[16px] sm:text-[14px] text-[#878c8e]'>GESCHÄFT</h4></motion.div>
+                    <motion.div initial={{ x: -20, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} ><h4 className='unbounded text-[16px] sm:text-[14px] text-[#878c8e]'>Geschaäft</h4></motion.div>
                     <motion.div initial={{ x: -20, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ delay: 0.2 }} ><h4 className='unbounded  text-lg sm:text-[15px] font-light text-[#f1f2ee]'>info@vivaversa.agency</h4></motion.div>
                 </div>
             </div>
 
             <div className='flex mt-10 sm:mt-14 justify-start items-start gap-x-[30px]'>
                 <div className='flex flex-col sm:gap-x-[20px] gap-y-[20px]'>
-                    <motion.div initial={{ x: -20, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ delay: 0.2 }} ><h4 className='unbounded text-[16px] sm:text-[14px] text-[#878c8e]'>SOZIALE NETZWERKE</h4></motion.div>
+                    <motion.div initial={{ x: -20, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ delay: 0.2 }} ><h4 className='unbounded text-[16px] sm:text-[14px] text-[#878c8e] capitalize'>Soziale Netzwerke</h4></motion.div>
                     <div className='flex sm:items-center flex-col justify-start items-start sm:flex-row gap-y-[20px] gap-x-0 sm:gap-y-0 sm:gap-x-[20px]'>
                         <div className='flex flex-row gap-x-[20px] '>
                             <motion.div initial={{ opacity: 0 }} whileInView={{  opacity: 1 }} transition={{ delay: 0.2 }} ><h4 className='unbounded text-lg sm:text-[15px] font-light hover:text-[#878c8e] transition-all cursor-pointer text-[#f1f2ee]'>Instagram</h4></motion.div>

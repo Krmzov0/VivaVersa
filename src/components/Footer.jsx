@@ -22,9 +22,9 @@ const Footer = () => {
             </div>
 
             <div className='flex items-start sm:items-center flex-col sm:flex-row gap-y-4 sm:gap-y-0 gap-x-0 sm:gap-x-4 mt-16 sm:mt-24'>
-                <h1 className='unbounded relative footerButtons text-[16px] sm:text-[16px] text-[#f1f2ee]'>CONTACT US</h1>
+                <h1 onClick={() => router.push('/contact')} className='unbounded cursor-pointer hover:text-[#878c8e] transition-all duration-200 relative footerButtons text-[16px] sm:text-[16px] text-[#f1f2ee]'>CONTACT US</h1>
                 <span className='unbounded text-[#878c8e] '>or</span>
-                <h1 className='unbounded relative footerButtons text-[16px] sm:text-[16px] text-[#f1f2ee]'>SCHEDULE A CALL</h1>
+                <h1 className='unbounded cursor-pointer hover:text-[#878c8e] transition-all duration-200 relative footerButtons text-[16px] sm:text-[16px] text-[#f1f2ee]'>SCHEDULE A CALL</h1>
             </div>
 
             <div className='mt-10 sm:mt-14 w-full sm:w-[70%] h-[1px] bg-[#878c8e3a]'></div>
