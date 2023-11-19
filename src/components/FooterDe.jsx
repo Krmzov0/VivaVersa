@@ -59,7 +59,7 @@ const FooterDe = () => {
 
             <div className='mt-10 sm:mt-14 w-full sm:w-[70%] h-[1px] bg-[#878c8e3a]'></div>
 
-            <div className='mt-10 sm:mt-14' >
+            <div className='mt-10 sm:mt-14 flex justify-between items-center' >
                 <div className='flex sm:items-center flex-col justify-start items-start sm:flex-row gap-y-[20px] gap-x-0 sm:gap-y-0 sm:gap-x-[20px]'>
                     <div className='flex flex-row gap-x-[20px] '>
                         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} ><h4 className='unbounded text-lg sm:text-[15px] font-light hover:text-[#878c8e] transition-all cursor-pointer text-[#f1f2ee]' onClick={() => router.push("/de/home")}>Heim</h4></motion.div>
@@ -70,6 +70,10 @@ const FooterDe = () => {
                         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} ><h4 className='unbounded text-lg sm:text-[15px] font-light hover:text-[#878c8e] transition-all cursor-pointer text-[#f1f2ee]' onClick={() => router.push("/de/services")}>Dienste</h4></motion.div>
                         <motion.div initial={{ x: -20, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} ><h4 className='unbounded text-lg sm:text-[15px] font-light hover:text-[#f1f2ee] transition-all cursor-pointer text-[#878c8e]' onClick={() => router.push("/de/contact")}>Kontakt</h4></motion.div>
                     </div>
+                </div>
+
+                <div>
+                    <p className='text-[#878c8e]'>2023 © VivaVersa</p>
                 </div>
             </div>
         </div>

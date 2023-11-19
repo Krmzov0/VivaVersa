@@ -80,7 +80,7 @@ return (
         <div className='w-screen relative h-max px-6 md:px-12 pt-10 pb-16 md:py-20 md:pb-28'>
             <div className='flex flex-col w-fit gap-y-4'>
                 <h4 className='text-sm md:text-md text-[#878c8e] font-regular ml-1'>LASST UNS ÜBER DEINE ZIELE SPRECHEN</h4>
-                <h1 className='text-4xl md:text-6xl font-light duration-300 md:hover:font-medium transition-all'>KONTAKTIERE UNS</h1>
+                <h1 className='text-4xl md:text-5xl font-light duration-300 md:hover:font-medium transition-all'>KONTAKTIERE UNS</h1>
             </div>
 
             <form className='z-[30] mt-12 w-full md:w-[50%] flex flex-col gap-y-8' onSubmit={handleSubmit}>
