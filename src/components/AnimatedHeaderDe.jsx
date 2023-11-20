@@ -6,31 +6,40 @@ const AnimatedH1De = () => {
         <div className='flex h1div flex-col justify-center items-center text-center'>
             <div className="flex items-center gap-x-2 md:gap-x-6">
                 <div className='h1class transition-all flex  justify-center items-center leading-[45px] md:leading-[65px] xl:leading-[90px] text-3xl md:text-5xl xl:text-7xl duration-300 text-[#17191b] text-center unbounded font-light'>
-                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.04 }}>D</motion.div>
+                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.04 }}>G</motion.div>
                     <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.08 }}>E</motion.div>
                     <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.12 }}>S</motion.div>
-                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.16 }}>I</motion.div>
-                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>C</motion.div>
-                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.24 }}>H</motion.div>
-                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.28 }}>G</motion.div>
-                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.32 }}>N</motion.div>
-                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.36 }}>I</motion.div>
-                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}>C</motion.div>
-                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.44 }}>H</motion.div>
-                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.48 }}>N</motion.div>
-                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.52 }}>G</motion.div>
+                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.16 }}>T</motion.div>
+                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>A</motion.div>
+                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.24 }}>L</motion.div>
+                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.28 }}>T</motion.div>
+                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.32 }}>U</motion.div>
+                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.36 }}>N</motion.div>
+                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}>G</motion.div>
                 </div>
 
+                <div className='h1class transition-all hidden md:flex  justify-center items-center leading-[45px] md:leading-[65px] xl:leading-[90px] text-3xl md:text-5xl xl:text-7xl duration-300 text-[#17191b] text-center unbounded font-light'>
+                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.56 }}>F</motion.div>
+                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 }}>Ü</motion.div>
+                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.64 }}>R</motion.div>
+                </div>
 
+                <div className='h1class transition-all hidden md:flex  justify-center items-center leading-[45px] md:leading-[65px] xl:leading-[90px] text-3xl md:text-5xl xl:text-7xl duration-300 text-[#17191b] text-center unbounded font-light'>
+                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.68 }}>D</motion.div>
+                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.72 }}>I</motion.div>
+                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.76 }}>E</motion.div>
+                </div>
 
-            </div>
-
-            <div className="flex md:hidden items-center gap-x-2 md:gap-x-6">
                 <div className='h1class transition-all flex md:hidden  justify-center items-center leading-[45px] md:leading-[65px] xl:leading-[90px] text-3xl md:text-5xl xl:text-7xl duration-300 text-[#17191b] text-center unbounded font-light'>
                     <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.56 }}>F</motion.div>
                     <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 }}>Ü</motion.div>
                     <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.64 }}>R</motion.div>
                 </div>
+
+            </div>
+
+            <div className="flex md:hidden items-center gap-x-2 md:gap-x-6">
+                
 
                 <div className='h1class transition-all flex md:hidden  justify-center items-center leading-[45px] md:leading-[65px] xl:leading-[90px] text-3xl md:text-5xl xl:text-7xl duration-300 text-[#17191b] text-center unbounded font-light'>
                     <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.68 }}>D</motion.div>
@@ -45,22 +54,16 @@ const AnimatedH1De = () => {
                     <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.92 }}>S</motion.div>
                     <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.96 }}>C</motion.div>
                     <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1 }}>H</motion.div>
+                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.04 }}>L</motion.div>
+                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.08 }}>I</motion.div>
+                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.12 }}>C</motion.div>
+                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.16 }}>H</motion.div>
+                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.2 }}>E</motion.div>
                 </div>
             </div>
 
             <div className="flex items-center gap-x-2 md:gap-x-6">
 
-                <div className='h1class transition-all hidden md:flex  justify-center items-center leading-[45px] md:leading-[65px] xl:leading-[90px] text-3xl md:text-5xl xl:text-7xl duration-300 text-[#17191b] text-center unbounded font-light'>
-                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.56 }}>F</motion.div>
-                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 }}>Ü</motion.div>
-                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.64 }}>R</motion.div>
-                </div>
-
-                <div className='h1class transition-all hidden md:flex  justify-center items-center leading-[45px] md:leading-[65px] xl:leading-[90px] text-3xl md:text-5xl xl:text-7xl duration-300 text-[#17191b] text-center unbounded font-light'>
-                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.68 }}>D</motion.div>
-                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.72 }}>I</motion.div>
-                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.76 }}>E</motion.div>
-                </div>
 
                 <div className='h1class transition-all hidden md:flex  justify-center items-center leading-[45px] md:leading-[65px] xl:leading-[90px] text-3xl md:text-5xl xl:text-7xl duration-300 text-[#17191b] text-center unbounded font-light'>
                     <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8 }}>M</motion.div>
@@ -69,6 +72,11 @@ const AnimatedH1De = () => {
                     <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.92 }}>S</motion.div>
                     <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.96 }}>C</motion.div>
                     <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1 }}>H</motion.div>
+                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.04 }}>L</motion.div>
+                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.08 }}>I</motion.div>
+                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.12 }}>C</motion.div>
+                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.16 }}>H</motion.div>
+                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.2 }}>E</motion.div>
                 </div>
 
                 <div className='h1class transition-all flex  justify-center items-center leading-[45px] md:leading-[65px] xl:leading-[90px] text-3xl md:text-5xl xl:text-7xl duration-300 text-[#17191b] text-center unbounded font-light'>
@@ -78,12 +86,11 @@ const AnimatedH1De = () => {
                     <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.16 }}>Ü</motion.div>
                     <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.2 }}>H</motion.div>
                     <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.24 }}>R</motion.div>
-                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.28 }}>E</motion.div>
+                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.28 }}>U</motion.div>
                     <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.32 }}>N</motion.div>
+                    <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.36 }}>G</motion.div>
                 </div>
-
             </div>
-
 
             <div className="flex items-center gap-x-2 md:gap-x-6">
                 <div className='h1class transition-all flex  justify-center items-center leading-[45px] md:leading-[65px] xl:leading-[90px] text-3xl md:text-5xl xl:text-7xl duration-300 text-[#17191b] text-center unbounded font-light'>

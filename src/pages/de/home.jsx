@@ -47,7 +47,7 @@ export default function Home() {
       <div className="">
 
         <div className="relative flex justify-start sm:justify-center gap-y-0 sm:gap-y-24 flex-col items-center h-max sm:h-screen w-full">
-          <div className="flex flex-col justify-center items-center mt-14 sm:mt-0 relative">
+          <div className="flex flex-col justify-center items-center mt-16 sm:mt-0 relative">
             <p className="text-[#878c8e]  font-light mb-3 sm:md-4 text-sm sm:text-[16px] text-center">AGENTUR FÜR DIGITALES MARKETING</p>
 
             <div>
@@ -62,7 +62,7 @@ export default function Home() {
                 <motion.div initial={{ scaleY: 0 }} animate={{ scaleY: 1 }} transition={{ delay: 0.9 }} className="origin-center w-14 h-4 bg-[#878c8e] absolute"><div className="w-14 h-4 bg-[#878c8e] absolute"></div></motion.div>
                 <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.7 }} className="origin-center"><div className="w-8 h-8 bg-[#f1f2ee]"></div></motion.div>
               </div></motion.div>
-              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1 }} ><h3 className="text-md sm:text-lg text-center  font-light uppercase">Soziales Media <br /> Marketing</h3></motion.div>
+              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1 }} ><h3 className="text-md sm:text-lg text-center  font-light uppercase">Social Media <br /> Marketing</h3></motion.div>
             </div>
 
             <div className="h-full w-[1px] bg-[#878c8e47]  flex"></div>
@@ -133,7 +133,7 @@ export default function Home() {
                 <motion.div initial={{ y: "100%" }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.1 }}><h1 className="overflow-hidden uppercase">ENTFESSELE DAS VOLLE POTENZIAL DEINER MARKE MIT VIVA VERSA,</h1></motion.div>
               </div>
               <div className="overflow-hidden">
-                <motion.div initial={{ y: "100%" }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.1 }}><h1 className="overflow-hidden uppercase">Deine vertrauenswürdige Social-Media-Marketing-Agentur</h1></motion.div>
+                <motion.div initial={{ y: "100%" }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.1 }}><h1 className="overflow-hidden uppercase">Deine vertrauenswürdige Social Media Marketing-Agentur</h1></motion.div>
               </div>
               <div className="overflow-hidden">
                 <motion.div initial={{ y: "100%" }} whileInView={{ y: 0 }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 0.7, delay: 0.1 }}><h1 className="overflow-hidden uppercase">Wir sind auf überzeugendes Social Media spezialisiert.</h1></motion.div>
@@ -186,7 +186,7 @@ export default function Home() {
           <div>
             <div>
               <div className="border-[#f1f2ee]">
-                <h1 className="text-2xl sm:text-[32px] text-[#f1f2ee]  font-light hover:font-light sm:hover:font-medium transition-all duration-300 gap-x-4 flex items-center w-full"><span className="text-[#878c8e]">01</span> SOCIAL MEDIA-MARKETING</h1>
+                <h1 className="text-2xl sm:text-[32px] text-[#f1f2ee]  font-light hover:font-light sm:hover:font-medium transition-all duration-300 gap-x-4 flex items-center w-full"><span className="text-[#878c8e]">01</span> SOCIAL MEDIA MARKETING</h1>
                 <motion.div initial={{ scaleX: 0 }} whileInView={{ scaleX: '100%' }} transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 1 }} className="origin-left w-full h-[2px] bg-[#f1f2ee] my-10"></motion.div>
               </div>
             </div>
@@ -212,7 +212,7 @@ export default function Home() {
           <motion.div className="lg:px-0 relative lg:sticky lg:top-10" initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.1 }} >
             <div className=" px-8 lg:px-0 relative lg:sticky lg:top-10">
               <h1 className=" text-[16px] lg:text-[24px] font-light text-[#878c8e]">TECHNOLOGIE STAPEL</h1>
-              <h1 className=" text-[30px] lg:text-[38px] font-light text-[#17191b] mt-1">VON UNS VERWENDET <br /> TECHNOLOGIEN</h1>
+              <h1 className=" text-[30px] lg:text-[38px] font-light text-[#17191b] mt-1">VON UNS VERWENDETE <br /> TECHNOLOGIEN</h1>
             </div>
           </motion.div>
 
