@@ -12,7 +12,6 @@ export default function Home() {
   const router = useRouter();
 
   const [videoPlay, setvideoPlay] = useState(false)
-  const [unmuteVideo, setunmuteVideo] = useState(false)
 
   const videoRef = useRef(null);
 
@@ -28,18 +27,6 @@ export default function Home() {
     }
 
   };
-
-  const handleUnmuteVideo = () => {
-    const video = videoRef.current;
-
-    if (video.paused) {
-      video.play();
-    } else {
-      video.pause();
-    }
-
-    unmuteVideo ? setunmuteVideo(false) : setunmuteVideo(true)
-  }
 
   return (
     <>
@@ -79,35 +66,27 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="sm:p-12 sm:pt-0 w-screen h-full flex ">
-          <div className="mt-16 flex justify-center relative items-center w-full h-[30vh] sm:h-[100vh] bg-[#17191b]">
-            <video ref={videoRef} playsInline className="absolute w-full h-full">
-              <source src="/video.mp4" type="video/mp4" />
+        <div className="sm:p-12 sm:pt-0 w-screen h-full flex">
+          <div className="mt-16 flex justify-center relative items-center w-full h-[30vh] sm:h-[100vh] bg-transparent">
+            <video ref={videoRef} playsInline autoPlay className="absolute left-0 top-0 w-full">
+              <source src="/logoVideo.mp4" type="video/mp4" />
             </video>
             {videoPlay ? <motion.div transition={{ type: "spring", stiffness: 200 }} initial={{ scale: 1 }} whileHover={{ scale: 1.15 }} whileTap={{ y: 2.5 }} className=" absolute top-5 md:top-10 right-5 md:right-10">
-              <div onClick={togglePlayPause} className={unmuteVideo ? "flex bg-[#f1f2ee] opacity-75 cursor-pointer rounded-full w-14 md:w-20 h-14 md:h-20 justify-center items-center" : "hidden"}>
+              <div onClick={togglePlayPause} className="flex bg-[#f1f2ee] opacity-75 cursor-pointer rounded-full w-14 md:w-20 h-14 md:h-20 justify-center items-center">
                 <svg className="w-6 md:w-fit" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.64386 5.02467V18.9711C5.64455 19.257 5.72521 19.5371 5.87674 19.7796C6.02827 20.0221 6.24461 20.2173 6.50132 20.3433C6.75802 20.4693 7.04484 20.5209 7.32935 20.4924C7.61387 20.4638 7.88473 20.3563 8.11131 20.1818L17.7665 12.6722C17.9577 12.523 18.1108 12.3305 18.2131 12.1106C18.3154 11.8907 18.3641 11.6497 18.3551 11.4073C18.3461 11.165 18.2798 10.9282 18.1615 10.7165C18.0432 10.5047 17.8763 10.3241 17.6746 10.1894L8.01935 3.75264C7.78885 3.60084 7.52164 3.5141 7.24593 3.50158C6.97022 3.48906 6.69625 3.55122 6.45294 3.68151C6.20964 3.8118 6.00603 4.00537 5.86362 4.24178C5.72121 4.4782 5.64528 4.74868 5.64386 5.02467Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M8.5 4.5H5.5C4.94772 4.5 4.5 4.94772 4.5 5.5V18.5C4.5 19.0523 4.94772 19.5 5.5 19.5H8.5C9.05229 19.5 9.5 19.0523 9.5 18.5V5.5C9.5 4.94772 9.05229 4.5 8.5 4.5Z" stroke="#17191b" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M18.5 4.5H15.5C14.9477 4.5 14.5 4.94772 14.5 5.5V18.5C14.5 19.0523 14.9477 19.5 15.5 19.5H18.5C19.0523 19.5 19.5 19.0523 19.5 18.5V5.5C19.5 4.94772 19.0523 4.5 18.5 4.5Z" stroke="#17191b" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
             </motion.div> :
               <motion.div transition={{ type: "spring", stiffness: 200 }} initial={{ scale: 1 }} whileHover={{ scale: 1.15 }} whileTap={{ y: 2.5 }} className=" absolute top-5 md:top-10 right-5 md:right-10">
-                <div onClick={togglePlayPause} className={unmuteVideo ? "flex bg-[#f1f2ee] opacity-75 cursor-pointer rounded-full w-14 md:w-20 h-14 md:h-20 justify-center items-center" : "hidden"}>
+                <div onClick={togglePlayPause} className="flex bg-[#f1f2ee] opacity-75 cursor-pointer rounded-full w-14 md:w-20 h-14 md:h-20 justify-center items-center">
                   <svg className="w-6 md:w-fit" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.5 4.5H5.5C4.94772 4.5 4.5 4.94772 4.5 5.5V18.5C4.5 19.0523 4.94772 19.5 5.5 19.5H8.5C9.05229 19.5 9.5 19.0523 9.5 18.5V5.5C9.5 4.94772 9.05229 4.5 8.5 4.5Z" stroke="#17191b" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M18.5 4.5H15.5C14.9477 4.5 14.5 4.94772 14.5 5.5V18.5C14.5 19.0523 14.9477 19.5 15.5 19.5H18.5C19.0523 19.5 19.5 19.0523 19.5 18.5V5.5C19.5 4.94772 19.0523 4.5 18.5 4.5Z" stroke="#17191b" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M5.64386 5.02467V18.9711C5.64455 19.257 5.72521 19.5371 5.87674 19.7796C6.02827 20.0221 6.24461 20.2173 6.50132 20.3433C6.75802 20.4693 7.04484 20.5209 7.32935 20.4924C7.61387 20.4638 7.88473 20.3563 8.11131 20.1818L17.7665 12.6722C17.9577 12.523 18.1108 12.3305 18.2131 12.1106C18.3154 11.8907 18.3641 11.6497 18.3551 11.4073C18.3461 11.165 18.2798 10.9282 18.1615 10.7165C18.0432 10.5047 17.8763 10.3241 17.6746 10.1894L8.01935 3.75264C7.78885 3.60084 7.52164 3.5141 7.24593 3.50158C6.97022 3.48906 6.69625 3.55122 6.45294 3.68151C6.20964 3.8118 6.00603 4.00537 5.86362 4.24178C5.72121 4.4782 5.64528 4.74868 5.64386 5.02467Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
                 </div>
               </motion.div>
             }
-
-            <MagneticHover>
-              <div onClick={handleUnmuteVideo} className={unmuteVideo ? "hidden" : "hover:scale-[1.1] transition-all bg-[#f1f2ee] opacity-75 cursor-pointer rounded-full w-20 h-20 sm:w-28 sm:h-28 flex justify-center items-center"}>
-                <svg className="w-8 md:w-fit" width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.64386 5.02467V18.9711C5.64455 19.257 5.72521 19.5371 5.87674 19.7796C6.02827 20.0221 6.24461 20.2173 6.50132 20.3433C6.75802 20.4693 7.04484 20.5209 7.32935 20.4924C7.61387 20.4638 7.88473 20.3563 8.11131 20.1818L17.7665 12.6722C17.9577 12.523 18.1108 12.3305 18.2131 12.1106C18.3154 11.8907 18.3641 11.6497 18.3551 11.4073C18.3461 11.165 18.2798 10.9282 18.1615 10.7165C18.0432 10.5047 17.8763 10.3241 17.6746 10.1894L8.01935 3.75264C7.78885 3.60084 7.52164 3.5141 7.24593 3.50158C6.97022 3.48906 6.69625 3.55122 6.45294 3.68151C6.20964 3.8118 6.00603 4.00537 5.86362 4.24178C5.72121 4.4782 5.64528 4.74868 5.64386 5.02467Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </div>
-            </MagneticHover>
           </div>
         </div>
 
