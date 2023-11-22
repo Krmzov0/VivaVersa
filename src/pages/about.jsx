@@ -3,7 +3,12 @@ import { motion } from 'framer-motion'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
-const about = () => {
+const About
+
+
+
+
+= () => {
   return (
     <>
       <Header />
@@ -187,4 +192,9 @@ const about = () => {
   )
 }
 
-export default about
+export default About
+
+
+
+
+

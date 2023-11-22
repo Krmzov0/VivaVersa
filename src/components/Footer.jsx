@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 
 const Footer = () => {
-    
+
     const router = useRouter()
 
     return (
@@ -17,7 +17,7 @@ const Footer = () => {
                     height={10}
                     alt=''
                     priority={true}
-                   
+
                 />
             </div>
 
@@ -37,7 +37,7 @@ const Footer = () => {
 
                 <div className='flex flex-col gap-x-[20px] gap-y-[20px]'>
                     <motion.div initial={{ x: -20, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} ><h4 className='unbounded text-[16px] sm:text-[14px] text-[#878c8e]'>Business</h4></motion.div>
-                    <motion.div initial={{ x: -20, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ delay: 0.2 }} ><h4 className='unbounded  text-lg sm:text-[15px] font-light text-[#f1f2ee]'>info@vivaversa.agency</h4></motion.div>
+                    <motion.div initial={{ x: -20, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ delay: 0.2 }} ><h4 className='unbounded  text-lg sm:text-[15px] font-light text-[#f1f2ee]'>info@vivaversa.digital</h4></motion.div>
                 </div>
             </div>
 
@@ -46,7 +46,7 @@ const Footer = () => {
                     <motion.div initial={{ x: -20, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ delay: 0.2 }} ><h4 className='unbounded text-[16px] sm:text-[14px] text-[#878c8e]'>Socials</h4></motion.div>
                     <div className='flex sm:items-center flex-col justify-start items-start sm:flex-row gap-y-[20px] gap-x-0 sm:gap-y-0 sm:gap-x-[20px]'>
                         <div className='flex flex-row gap-x-[20px] '>
-                            <motion.div initial={{ opacity: 0 }} whileInView={{  opacity: 1 }} transition={{ delay: 0.2 }} ><h4 className='unbounded text-lg sm:text-[15px] font-light hover:text-[#878c8e] transition-all cursor-pointer text-[#f1f2ee]'>Instagram</h4></motion.div>
+                            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.2 }} ><h4 className='unbounded text-lg sm:text-[15px] font-light hover:text-[#878c8e] transition-all cursor-pointer text-[#f1f2ee]'>Instagram</h4></motion.div>
                             <motion.div initial={{ x: -20, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ delay: 0.2 }} ><h4 className='unbounded text-lg sm:text-[15px] hover:text-[#f1f2ee] transition-all cursor-pointer font-light text-[#878c8e]'>Facebook</h4></motion.div>
                         </div>
                         <div className='flex flex-row gap-x-[20px] '>
@@ -59,7 +59,7 @@ const Footer = () => {
 
             <div className='mt-10 sm:mt-14 w-full sm:w-[70%] h-[1px] bg-[#878c8e3a]'></div>
 
-            <div className='mt-10 sm:mt-14 flex justify-between items-center' >
+            <div className='mt-10 gap-y-9 md:gap-y-0 sm:mt-14 flex-col md:flex-row justify-normal items-start flex md:justify-between md:items-center' >
                 <div className='flex sm:items-center flex-col justify-start items-start sm:flex-row gap-y-[20px] gap-x-0 sm:gap-y-0 sm:gap-x-[20px]'>
                     <div className='flex flex-row gap-x-[20px] '>
                         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} ><h4 className='unbounded text-lg sm:text-[15px] font-light hover:text-[#878c8e] transition-all cursor-pointer text-[#f1f2ee]' onClick={() => router.push("/")}>Home</h4></motion.div>

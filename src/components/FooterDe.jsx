@@ -37,7 +37,7 @@ const FooterDe = () => {
 
                 <div className='flex flex-col gap-x-[20px] gap-y-[20px]'>
                     <motion.div initial={{ x: -20, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} ><h4 className='unbounded text-[16px] sm:text-[14px] text-[#878c8e]'>Geschaäft</h4></motion.div>
-                    <motion.div initial={{ x: -20, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ delay: 0.2 }} ><h4 className='unbounded  text-lg sm:text-[15px] font-light text-[#f1f2ee]'>info@vivaversa.agency</h4></motion.div>
+                    <motion.div initial={{ x: -20, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ delay: 0.2 }} ><h4 className='unbounded  text-lg sm:text-[15px] font-light text-[#f1f2ee]'>info@vivaversa.digital</h4></motion.div>
                 </div>
             </div>
 
@@ -59,7 +59,7 @@ const FooterDe = () => {
 
             <div className='mt-10 sm:mt-14 w-full sm:w-[70%] h-[1px] bg-[#878c8e3a]'></div>
 
-            <div className='mt-10 sm:mt-14 flex justify-between items-center' >
+            <div className='mt-10 gap-y-9 md:gap-y-0 sm:mt-14 flex-col md:flex-row justify-normal items-start flex md:justify-between md:items-center' >
                 <div className='flex sm:items-center flex-col justify-start items-start sm:flex-row gap-y-[20px] gap-x-0 sm:gap-y-0 sm:gap-x-[20px]'>
                     <div className='flex flex-row gap-x-[20px] '>
                         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} ><h4 className='unbounded text-lg sm:text-[15px] font-light hover:text-[#878c8e] transition-all cursor-pointer text-[#f1f2ee]' onClick={() => router.push("/de/home")}>Heim</h4></motion.div>

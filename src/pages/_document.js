@@ -7,6 +7,7 @@ export default function Document() {
         <title>Viva Versa</title>
         <meta property="og:title" content="Viva Versa" key="title" />
         <link rel="shortcut icon" href="/static/logo.svg" />
+        <meta name="description" content="Digital Marketing Agency" key="desc"/>
       </Head>
       <body>
         <Main />

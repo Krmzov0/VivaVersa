@@ -3,7 +3,7 @@ import Header from '@/components/Header'
 import React from 'react'
 import { motion } from 'framer-motion'
 
-const services = () => {
+const Services = () => {
   return (
     <>
       <Header />
@@ -147,4 +147,4 @@ const services = () => {
   )
 }
 
-export default services
+export default Services

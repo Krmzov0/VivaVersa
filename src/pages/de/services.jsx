@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import FooterDe from '@/components/FooterDe'
 import HeaderDe from '@/components/HeaderDe'
 
-const services = () => {
+const Services = () => {
     return (
         <>
             <HeaderDe />
@@ -191,4 +191,4 @@ const services = () => {
     )
 }
 
-export default services
+export default Services
